@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "Bash(ipconfig)",
+      "Bash(findstr \"IPv4\")",
+      "Bash(curl -s http://192.168.0.104:3001/api/health)",
+      "Bash(curl -s -X POST http://localhost:3001/api/video/info -H \"Content-Type: application/json\" -d '{\"url\":\"https://weixin.qq.com/sph/ARhquMLVjX\"}')",
+      "Bash(curl -s -X POST http://localhost:3001/api/weixin/login -H \"Content-Type: application/json\" -d '{\"code\":\"test123\"}')",
+      "Bash(curl -s -X POST http://localhost:3001/api/weixin/login -H \"Content-Type: application/json\" -d '{\"code\":\"test123\"}' -v)",
+      "Bash(netstat -ano)",
+      "Bash(findstr \":3001\")",
+      "Bash(taskkill //F //PID 17104)",
+      "Bash(node index.cjs)",
+      "Bash(taskkill //F //PID 19440)",
+      "Bash(curl -s -X POST http://localhost:3001/api/weixin/set-cookie -H \"Content-Type: application/json\" -d '{\"cookie\":\"test=123; abc=456\"}')",
+      "Bash(taskkill //F //PID 8944)",
+      "Bash(curl -s \"https://res.wx.qq.com/t/wx_fed/finder/web/finder-preview/res/assets/mmfinderopenwebapisvr.0fb5ed5d.js\")",
+      "Bash(curl -s \"https://res.wx.qq.com/t/wx_fed/finder/web/finder-preview/res/assets/feed.9c135e64.js\")",
+      "Bash(grep -oP '.{0,200}setVideoUrl.{0,200}')",
+      "Bash(curl -s \"https://res.wx.qq.com/t/wx_fed/finder/web/finder-preview/res/assets/merlin.b35739a2.js\")",
+      "Bash(curl -s http://192.168.1.47:3001/api/health)",
+      "Bash(curl -s -X POST http://localhost:3001/api/video/info -H \"Content-Type: application/json\" -d '{\"url\":\"https://www.xiaohongshu.com/explore/685c8a49000000000b03c5a4\"}')",
+      "Bash(curl -s -X POST http://localhost:3001/api/video/info -H \"Content-Type: application/json\" -d '{\"url\":\"https://www.douyin.com/video/7524144134933035315\"}')",
+      "Bash(curl -s -I \"http://192.168.1.47:3001/api/video/download?url=https%3A%2F%2Fv11-web-prime.douyinvod.com%2Fvideo%2Ftos%2Fcn%2Ftos-cn-vd-0026%2FoIDBE6LAAnNBzv42AAAe8afVA1AilQi1gIQga1%2Fmedia-video-avc1%2F\")",
+      "Bash(curl -s \"http://192.168.1.47:3001/api/video/download?url=https%3A%2F%2Fv11-web-prime.douyinvod.com%2Fvideo%2Ftos%2Fcn%2Ftos-cn-vd-0026%2FoIDBE6LAAnNBzv42AAAe8afVA1AilQi1gIQga1%2Fmedia-video-avc1%2F\")",
+      "Bash(curl -s -v \"http://192.168.1.47:3001/api/video/download?url=https%3A%2F%2Fv11-web-prime.douyinvod.com%2Fvideo%2Ftos%2Fcn%2Ftos-cn-vd-0026%2FoIDBE6LAAnNBzv42AAAe8afVA1AilQi1gIQga1%2Fmedia-video-avc1%2F\")",
+      "Bash(curl -s \"http://192.168.1.47:3001/api/video/download?url=https://v11-web-prime.douyinvod.com/video/tos/cn/tos-cn-vd-0026/oIDBE6LAAnNBzv42AAAe8afVA1AilQi1gIQga1/media-video-avc1/\")",
+      "Bash(curl -s -X POST http://localhost:3001/api/video/info -H \"Content-Type: application/json\" -d '{\"url\":\"https://www.bilibili.com/video/BV1GJ411x7h7\"}')",
+      "Bash(curl -s -I \"http://192.168.1.47:3001/api/video/download?url=https%3A%2F%2Fcn-gddg-ct-01-10.bilivideo.com%2Fupgcxcode%2F99%2F91%2F137649199%2F137649199_da2-1-192.mp4\")",
+      "Bash(curl -s \"http://192.168.1.47:3001/api/video/download?url=https://cn-gddg-ct-01-10.bilivideo.com/upgcxcode/99/91/137649199/137649199_da2-1-192.mp4\")",
+      "Bash(node -e \"const http = require\\('http'\\); http.get\\('http://localhost:3001/api/health', \\(res\\) => { let d=''; res.on\\('data',c=>d+=c\\); res.on\\('end',\\(\\)=>console.log\\('Health:', d\\)\\); }\\).on\\('error', \\(e\\) => console.log\\('Server not running:', e.message\\)\\)\")",
+      "Bash(curl -s \"http://localhost:3001/api/video/size?url=https://example.com/test.mp4\")",
+      "Bash(tasklist)",
+      "Bash(taskkill //F //PID 21704)",
+      "Bash(curl -s \"http://localhost:3001/api/health\")",
+      "Bash(cd \"d:/my/test-react\" && npm install dotenv)",
+      "Read(//d/my/test-react/**)"
+    ]
+  }
+}

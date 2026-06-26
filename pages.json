@@ -1,0 +1,52 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^login-modal": "@/components/login-modal.vue"
+		}
+	},
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+			}
+		},
+		{
+			"path": "pages/result/result",
+			"style": {
+				"navigationBarTitleText": "解析结果"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "二支原片提取",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#72bc5c",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "视频解析",
+				"iconPath": "static/shiping.png",
+				"selectedIconPath": "static/shipinged.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/my.png",
+				"selectedIconPath": "static/myed.png"
+			}
+		]
+	}
+}
