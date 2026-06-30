@@ -5,18 +5,17 @@
 			<view class="avatar-wrap">
 				<image
 					class="avatar"
-					:src="userInfo ? userInfo.avatarUrl : '/static/logo.png'"
+					:src="(userInfo && userInfo.avatarUrl) || '/static/logo.png'"
 					mode="aspectFill"
 				/>
 			</view>
 			<view class="user-info">
-				<text class="username">{{ userInfo ? userInfo.nickName : '点击登录' }}</text>
+				<text class="username">{{ (userInfo && userInfo.nickName) || '点击完善资料' }}</text>
 				<text class="user-desc" v-if="userInfo && isAdmin">管理员</text>
-				<text class="user-desc" v-else-if="userInfo">已登录</text>
-				<text class="user-desc" v-else>登录后享受完整功能</text>
+				<text class="user-desc" v-else-if="userInfo && userInfo.nickName">已登录</text>
+				<text class="user-desc" v-else>设置头像和昵称</text>
 			</view>
-			<text class="login-arrow" v-if="!userInfo">›</text>
-			<text class="logout-btn" v-if="userInfo" @tap.stop="handleLogout">退出</text>
+			<text class="logout-btn" v-if="userInfo && userInfo.openid" @tap.stop="handleLogout">退出</text>
 		</view>
 
 		<!-- 统计信息 -->
@@ -61,6 +60,22 @@
 				</view>
 				<text class="cookie-status" v-if="cookieStatus">{{ cookieStatus }}</text>
 			</view>
+			<view class="platform-card">
+				<text class="cookie-label">平台管理</text>
+				<view class="platform-item" v-for="item in adminPlatforms" :key="item.platformKey">
+					<view class="platform-info">
+						<text class="platform-name-text">{{ item.name }}</text>
+						<text class="platform-status">{{ item.enabled ? '已启用' : '已停用' }}</text>
+					</view>
+					<switch
+						:checked="item.enabled"
+						:disabled="platformSaving"
+						color="#5cc261"
+						@change="onPlatformSwitch($event, item)"
+					/>
+				</view>
+				<text class="cookie-status" v-if="platformSaving">保存中...</text>
+			</view>
 		</view>
 
 		<!-- 功能列表 -->
@@ -87,7 +102,7 @@
 			<text class="version">v1.0.0</text>
 		</view>
 
-		<!-- 登录弹窗 -->
+		<!-- 资料完善弹窗（后台已自动登录） -->
 		<login-modal
 			:visible="showLoginModal"
 			@close="showLoginModal = false"
@@ -98,11 +113,8 @@
 
 <script>
 	import config from '@/config/index.js';
-	import { isLoggedIn, getUserInfo, saveUserInfo, logout } from '@/utils/auth.js';
+	import { getUserInfo, saveUserInfo, logout, isAdmin, getOpenId } from '@/utils/auth.js';
 	import loginModal from '@/components/login-modal.vue';
-
-	// 管理员 openid
-	const ADMIN_OPENID = 'ojFWn6yM9VzuSZigbbFXmLgDCu3Q';
 
 	export default {
 		components: {
@@ -117,11 +129,13 @@
 				platformCount: 6,
 				wxCookie: '',
 				cookieStatus: '',
+				adminPlatforms: [],
+				platformSaving: false,
 			}
 		},
 		computed: {
 			isAdmin() {
-				return this.userInfo && this.userInfo.openid === ADMIN_OPENID;
+				return isAdmin();
 			},
 		},
 		onShow() {
@@ -131,22 +145,21 @@
 			if (this.isAdmin) {
 				console.log('[my] 管理员已登录');
 				this.loadCookie();
+				this.loadPlatforms();
 			}
 		},
 		methods: {
-			// 点击用户卡片
+			// 点击用户卡片 → 打开资料完善弹窗
 			handleUserCardTap() {
-				if (!this.userInfo) {
-					this.showLoginModal = true;
-				}
+				this.showLoginModal = true;
 			},
 
-			// 登录成功
+			// 资料保存成功
 			onLoginSuccess(info) {
 				saveUserInfo(info);
-				this.userInfo = info;
+				this.userInfo = getUserInfo();
 				this.showLoginModal = false;
-				uni.showToast({ title: '登录成功', icon: 'success' });
+				uni.showToast({ title: '资料已保存', icon: 'success' });
 				if (this.isAdmin) {
 					this.loadCookie();
 				}
@@ -156,7 +169,7 @@
 			handleLogout() {
 				uni.showModal({
 					title: '提示',
-					content: '确定退出登录？',
+					content: '确定退出登录？重新进入小程序将自动登录。',
 					success: (res) => {
 						if (res.confirm) {
 							logout();
@@ -190,12 +203,10 @@
 					return;
 				}
 
-				// 保存到本地
 				try {
 					uni.setStorageSync('wx_cookie', this.wxCookie.trim());
 				} catch (e) {}
 
-				// 发送到后端
 				this.cookieStatus = '保存中...';
 				uni.request({
 					url: config.apiBase + '/api/weixin/set-cookie',
@@ -231,6 +242,70 @@
 							} catch (e) {}
 							uni.showToast({ title: '已清空', icon: 'none' });
 						}
+					},
+				});
+			},
+
+			// 加载平台启停状态
+			loadPlatforms() {
+				// #ifdef H5
+				const url = '/api/admin/platforms';
+				// #endif
+				// #ifdef MP-WEIXIN
+				const url = config.apiBase + '/api/admin/platforms';
+				// #endif
+
+				uni.request({
+					url: url,
+					method: 'GET',
+					header: { 'X-Openid': getOpenId() },
+					success: (res) => {
+						if (res.data && res.data.success) {
+							this.adminPlatforms = res.data.data || [];
+						}
+					},
+					fail: (err) => {
+						console.error('[my] 加载平台状态失败:', err);
+					},
+				});
+			},
+
+			// 切换平台启用/停用
+			onPlatformSwitch(e, item) {
+				const newEnabled = e.detail.value;
+				this.platformSaving = true;
+
+				// #ifdef H5
+				const url = '/api/admin/platforms';
+				// #endif
+				// #ifdef MP-WEIXIN
+				const url = config.apiBase + '/api/admin/platforms';
+				// #endif
+
+				uni.request({
+					url: url,
+					method: 'PUT',
+					header: {
+						'Content-Type': 'application/json',
+						'X-Openid': getOpenId(),
+					},
+					data: {
+						platforms: [{ platformKey: item.platformKey, enabled: newEnabled }],
+					},
+					success: (res) => {
+						if (res.data && res.data.success) {
+							item.enabled = newEnabled;
+							uni.showToast({ title: newEnabled ? '已启用' : '已停用', icon: 'success' });
+						} else {
+							uni.showToast({ title: res.data?.error || '操作失败', icon: 'none' });
+						}
+					},
+					fail: (err) => {
+						console.error('[my] 更新平台状态失败:', err);
+						uni.showToast({ title: '网络请求失败', icon: 'none' });
+					},
+					complete: () => {
+						this.platformSaving = false;
 					},
 				});
 			},
@@ -322,11 +397,6 @@
 		color: rgba(255, 255, 255, 0.8);
 		margin-top: 8rpx;
 		display: block;
-	}
-
-	.login-arrow {
-		font-size: 40rpx;
-		color: rgba(255, 255, 255, 0.6);
 	}
 
 	.logout-btn {
@@ -442,6 +512,43 @@
 		color: #666;
 		margin-top: 16rpx;
 		display: block;
+	}
+
+	/* 平台管理 */
+	.platform-card {
+		background: #fff;
+		border-radius: 20rpx;
+		padding: 30rpx;
+		margin-top: 20rpx;
+		box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.05);
+	}
+
+	.platform-item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 24rpx 0;
+		border-bottom: 1rpx solid #f5f5f5;
+	}
+
+	.platform-item:last-child {
+		border-bottom: none;
+	}
+
+	.platform-info {
+		display: flex;
+		flex-direction: column;
+		gap: 6rpx;
+	}
+
+	.platform-name-text {
+		font-size: 28rpx;
+		color: #333;
+	}
+
+	.platform-status {
+		font-size: 22rpx;
+		color: #999;
 	}
 
 	/* 功能菜单 */
