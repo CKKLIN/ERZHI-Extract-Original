@@ -266,6 +266,7 @@
 					},
 					fail: (err) => {
 						console.error('[my] 加载平台状态失败:', err);
+						uni.showToast({ title: '加载平台状态失败', icon: 'none' });
 					},
 				});
 			},
