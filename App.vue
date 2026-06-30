@@ -1,16 +1,24 @@
 <script>
-	import { init } from '@/utils/auth.js';
+	import { init, autoLogin, isLoggedIn } from '@/utils/auth.js';
 
 	export default {
-		onLaunch: function() {
+		async onLaunch() {
 			console.log('App Launch');
-			// 初始化登录状态
+			// 1. 恢复本地存储的登录状态
 			init();
+
+			// 2. 后台静默登录（没有 openid 则自动 wx.login → 后端换）
+			if (!isLoggedIn()) {
+				console.log('[App] 未登录，开始后台静默登录...');
+				await autoLogin();
+			} else {
+				console.log('[App] 已登录，跳过后台登录');
+			}
 		},
-		onShow: function() {
+		onShow() {
 			console.log('App Show');
 		},
-		onHide: function() {
+		onHide() {
 			console.log('App Hide');
 		}
 	}

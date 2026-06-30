@@ -7,7 +7,7 @@
 // 测试环境配置
 const dev = {
 	// 服务器地址（小程序直连用）
-	apiBase: 'http://192.168.1.47:3001',
+	apiBase: 'http://localhost:3001',
 }
 
 // 正式环境配置

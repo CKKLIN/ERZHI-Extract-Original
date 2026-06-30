@@ -83,10 +83,10 @@
 		</view>
 
 		<!-- 视频号提示 -->
-		<view class="weixin-notice" v-if="data.platform === 'weixin' && !previewUrl">
+		<view class="weixin-notice" v-if="data.platform === 'weixin' && !hasDownloadLinks">
 			<text class="notice-icon">视频号</text>
 			<text class="notice-title">视频号内容</text>
-			<text class="notice-desc">视频号视频暂不支持直接下载，请在微信中打开观看</text>
+			<text class="notice-desc">请在微信 PC 客户端播放该视频后重试，或联系管理员配置解析服务</text>
 			<view class="btn-copy-link" @tap="copyLink">
 				<text>复制链接</text>
 			</view>
@@ -103,18 +103,7 @@
 				@error="onVideoError"
 				@play="onVideoPlay"
 			/>
-			<!-- <text class="debug-url" selectable>{{ previewUrl }}</text> -->
 		</view>
-
-		<!-- 复制链接 -->
-		<!-- <view class="copy-link-section">
-			<view class="btn-copy-video" v-if="videoUrl" @tap="copyVideoLink">
-				<text>复制视频链接</text>
-			</view>
-			<view class="btn-copy-video" v-if="imageUrl" @tap="copyImageLink">
-				<text>复制图片链接</text>
-			</view>
-		</view> -->
 	</view>
 </template>
 
@@ -174,13 +163,18 @@
 					this.data = JSON.parse(decodeURIComponent(options.data));
 					// 设置预览地址
 					if (this.data.platform === 'weixin') {
-						// #ifdef MP-WEIXIN
-						// 小程序中尝试直接播放视频号
-						this.previewUrl = this.data.url || '';
-						// #endif
-						// #ifdef H5
-						this.previewUrl = '';
-						// #endif
+						// 视频号：通过后端代理播放（后端会解密 finder.video.qq.com 链接）
+						const dl = this.data.downloadLinks;
+						const rawUrl = (dl && dl.combined && dl.combined.url)
+							|| (dl && dl.video && dl.video.url);
+						if (rawUrl) {
+							// #ifdef MP-WEIXIN
+							this.previewUrl = this.getProxyUrl(rawUrl);
+							// #endif
+							// #ifdef H5
+							this.previewUrl = rawUrl;
+							// #endif
+						}
 					} else if (this.data.downloadLinks && this.data.downloadLinks.combined) {
 						const rawUrl = this.data.downloadLinks.combined.url;
 						// #ifdef H5
