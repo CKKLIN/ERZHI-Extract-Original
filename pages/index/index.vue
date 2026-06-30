@@ -59,12 +59,10 @@
 			</view>
 		</view>
 
-		<!-- 登录弹窗 -->
+		<!-- 登录弹窗（仅用于完善资料，后台已自动登录） -->
 		<login-modal :visible="showLoginModal" @close="showLoginModal = false" @login-success="onLoginSuccess" />
 	</view>
 </template>
-
-
 
 <script>
 import config from '@/config/index.js';
@@ -80,27 +78,28 @@ export default {
 			inputUrl: '',
 			loading: false,
 			showLoginModal: false,
-			pendingParse: false,
-			platforms: [
-				{ name: '抖音', icon: '/static/douyin.svg' },
-				{ name: '小红书', icon: '/static/xiaohoshu.svg' },
-				{ name: 'B站', icon: '/static/bilibili.svg' },
-				{ name: '快手', icon: '/static/kuaisho.svg' },
-				{ name: '视频号', icon: '/static/shipinghao.svg' },
-				{ name: 'YouTube', icon: '/static/youtube.svg' },
-			],
+			platforms: [],
+			allPlatforms: {
+				douyin:      { name: '抖音',   icon: '/static/douyin.svg' },
+				xiaohongshu: { name: '小红书', icon: '/static/xiaohoshu.svg' },
+				bilibili:    { name: 'B站',    icon: '/static/bilibili.svg' },
+				kuaishou:    { name: '快手',   icon: '/static/kuaisho.svg' },
+				weixin:      { name: '视频号', icon: '/static/shipinghao.svg' },
+				youtube:     { name: 'YouTube', icon: '/static/youtube.svg' },
+			},
 			history: [],
 		}
 	},
 	onLoad() {
 		this.loadHistory();
+		this.loadEnabledPlatforms();
 	},
 	onShow() {
-		// 每次显示页面时检查登录状态
 		console.log('[index] 当前登录状态:', isLoggedIn());
 		if (isLoggedIn()) {
 			console.log('[index] 用户信息:', getUserInfo());
 		}
+		this.loadEnabledPlatforms();
 	},
 	methods: {
 		// 粘贴
@@ -129,34 +128,18 @@ export default {
 			this.inputUrl = '';
 		},
 
-		// 解析按钮点击
+		// 解析按钮点击 —— 后台已静默登录，无需检查
 		handleParse() {
 			if (!this.inputUrl || this.loading) return;
-
-			// 检查登录状态
-			if (!isLoggedIn()) {
-				console.log('[index] 用户未登录，弹出登录框');
-				this.pendingParse = true;
-				this.showLoginModal = true;
-				return;
-			}
-
-			// 已登录，直接解析
 			this.doParse();
 		},
 
-		// 登录成功回调
+		// 保存用户资料回调
 		onLoginSuccess(userInfo) {
-			console.log('[index] 登录成功回调:', userInfo);
+			console.log('[index] 保存用户资料:', userInfo);
 			saveUserInfo(userInfo);
 			this.showLoginModal = false;
-			uni.showToast({ title: '登录成功', icon: 'success' });
-
-			// 如果是因为点击解析而触发的登录，登录后自动解析
-			if (this.pendingParse) {
-				this.pendingParse = false;
-				this.doParse();
-			}
+			uni.showToast({ title: '资料已保存', icon: 'success' });
 		},
 
 		// 执行解析
@@ -173,6 +156,7 @@ export default {
 			uni.request({
 				url: apiUrl,
 				method: 'POST',
+				timeout: 65000,  // 65s 超时（桥接等待 30s + 下载解密 15s + 余量）
 				header: { 'Content-Type': 'application/json' },
 				data: { url: this.inputUrl.trim() },
 				success: (res) => {
@@ -248,6 +232,36 @@ export default {
 				},
 			});
 		},
+
+		// 从后端获取当前启用的平台列表
+		loadEnabledPlatforms() {
+			// #ifdef H5
+			const url = '/api/platforms/enabled';
+			// #endif
+			// #ifdef MP-WEIXIN
+			const url = config.apiBase + '/api/platforms/enabled';
+			// #endif
+
+			uni.request({
+				url: url,
+				method: 'GET',
+				success: (res) => {
+					if (res.data && res.data.success && Array.isArray(res.data.data)) {
+						const enabledKeys = res.data.data;
+						this.platforms = enabledKeys
+							.filter(key => this.allPlatforms[key])
+							.map(key => this.allPlatforms[key]);
+					} else {
+						// 降级：接口失败时显示全部平台
+						this.platforms = Object.values(this.allPlatforms);
+					}
+				},
+				fail: () => {
+					// 降级：网络失败时显示全部平台
+					this.platforms = Object.values(this.allPlatforms);
+				},
+			});
+		},
 	},
 }
 </script>
@@ -255,9 +269,8 @@ export default {
 <style scoped>
 .container {
 	min-height: 100vh;
-	background: transparent;
-	padding: 30rpx;
-	padding-bottom: 160rpx;
+	background: linear-gradient(180deg, #ffffff 0%, #f0f9f0 50%, #e8f5e9 100%);
+	padding:0 30rpx 30rpx 30rpx;
 }
 
 .header {
@@ -395,7 +408,6 @@ export default {
 	width: 40rpx;
 	height: 40rpx;
 	margin-right: 10rpx;
-	/* background-color: yellowgreen; */
 }
 
 .platform-name {
