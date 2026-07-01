@@ -1,0 +1,20 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e5]:
+    - complementary [ref=f4e6]:
+      - img "logo" [ref=f4e7]
+    - complementary [ref=f4e8]:
+      - generic [ref=f4e9]:
+        - generic "宝塔Linux面板" [ref=f4e11]
+        - generic [ref=f4e12]:
+          - textbox "账号" [ref=f4e15]
+          - textbox "密码" [ref=f4e18]
+          - generic [ref=f4e20]:
+            - generic [ref=f4e22] [cursor=pointer]: 安全登录模式(推荐)
+            - generic [ref=f4e23] [cursor=pointer]: 
+          - button "登录" [ref=f4e26] [cursor=pointer]
+          - generic [ref=f4e28]:
+            - link "无法登录？联系客服" [ref=f4e29] [cursor=pointer]:
+              - /url: https://www.bt.cn/new/wechat_customer
+            - link "忘记密码" [ref=f4e31] [cursor=pointer]:
+              - /url: https://www.bt.cn/bbs/thread-1172-1-1.html
+  - img

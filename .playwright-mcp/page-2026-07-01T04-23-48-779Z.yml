@@ -1,0 +1,333 @@
+- generic [ref=f28e1]:
+  - generic [ref=f28e4]:
+    - complementary [ref=f28e5]:
+      - generic [ref=f28e6]:
+        - generic [ref=f28e8] [cursor=pointer]:
+          - img [ref=f28e9]
+          - generic "双击可复制IP" [ref=f28e11]: 阿里云*宝塔面板
+          - generic [ref=f28e12]: "0"
+        - list [ref=f28e18]:
+          - listitem [ref=f28e19]:
+            - link "首页" [ref=f28e20] [cursor=pointer]:
+              - /url: /home
+              - img [ref=f28e21]
+              - generic [ref=f28e23]: 首页
+          - listitem [ref=f28e24]:
+            - link "网站" [ref=f28e25] [cursor=pointer]:
+              - /url: /site
+              - img [ref=f28e26]
+              - generic [ref=f28e28]: 网站
+          - listitem [ref=f28e29]:
+            - link "数据库" [ref=f28e30] [cursor=pointer]:
+              - /url: /database
+              - img [ref=f28e31]
+              - generic [ref=f28e33]: 数据库
+          - listitem [ref=f28e34]:
+            - link "Docker" [ref=f28e35] [cursor=pointer]:
+              - /url: /docker
+              - img [ref=f28e36]
+              - generic [ref=f28e38]: Docker
+          - listitem [ref=f28e39]:
+            - link "监控" [ref=f28e40] [cursor=pointer]:
+              - /url: /control
+              - img [ref=f28e41]
+              - generic [ref=f28e43]: 监控
+          - listitem [ref=f28e44]:
+            - link "安全" [ref=f28e45] [cursor=pointer]:
+              - /url: /firewall
+              - img [ref=f28e46]
+              - generic [ref=f28e48]: 安全
+          - listitem [ref=f28e49]:
+            - link "WAF" [ref=f28e50] [cursor=pointer]:
+              - /url: /waf
+              - img [ref=f28e51]
+              - generic [ref=f28e53]: WAF
+          - listitem [ref=f28e54]:
+            - link "文件" [ref=f28e55] [cursor=pointer]:
+              - /url: /files
+              - img [ref=f28e56]
+              - generic [ref=f28e58]: 文件
+          - listitem [ref=f28e59]:
+            - link "日志" [ref=f28e60] [cursor=pointer]:
+              - /url: /logs
+              - img [ref=f28e61]
+              - generic [ref=f28e63]: 日志
+          - listitem [ref=f28e64]:
+            - link "域名" [ref=f28e65] [cursor=pointer]:
+              - /url: /domain
+              - img [ref=f28e66]
+              - generic [ref=f28e68]: 域名
+          - listitem [ref=f28e69]:
+            - link "SSL" [ref=f28e70] [cursor=pointer]:
+              - /url: /ssl
+              - img [ref=f28e71]
+              - generic [ref=f28e73]: SSL
+          - listitem [ref=f28e74]:
+            - link "终端" [ref=f28e75] [cursor=pointer]:
+              - /url: /xterm
+              - img [ref=f28e76]
+              - generic [ref=f28e78]: 终端
+          - listitem [ref=f28e79]:
+            - link "节点管理" [ref=f28e80] [cursor=pointer]:
+              - /url: /node
+              - img [ref=f28e81]
+              - generic [ref=f28e83]: 节点管理
+          - listitem [ref=f28e84]:
+            - link "计划任务" [ref=f28e85] [cursor=pointer]:
+              - /url: /crontab
+              - img [ref=f28e86]
+              - generic [ref=f28e88]: 计划任务
+          - listitem [ref=f28e89]:
+            - link "软件商店" [ref=f28e90] [cursor=pointer]:
+              - /url: /soft
+              - img [ref=f28e91]
+              - generic [ref=f28e93]: 软件商店
+          - listitem [ref=f28e94]:
+            - link "设置" [ref=f28e95] [cursor=pointer]:
+              - /url: /config
+              - img [ref=f28e96]
+              - generic [ref=f28e98]: 设置
+          - listitem [ref=f28e99]:
+            - link "退出" [ref=f28e100] [cursor=pointer]:
+              - /url: javascript:;
+              - img [ref=f28e101]
+              - generic [ref=f28e103]: 退出
+        - generic [ref=f28e105]:
+          - generic [ref=f28e108] [cursor=pointer]: 
+          - generic [ref=f28e111] [cursor=pointer]: 
+    - generic [ref=f28e112]:
+      - generic [ref=f28e116]:
+        - generic [ref=f28e117]:
+          - generic [ref=f28e118]:
+            - generic [ref=f28e119] [cursor=pointer]:
+              - generic [ref=f28e120]:
+                - img [ref=f28e122]
+                - generic [ref=f28e123]: spring
+              - generic [ref=f28e125]: 
+            - generic [ref=f28e126] [cursor=pointer]: 
+          - generic:  
+        - generic [ref=f28e127]:
+          - generic [ref=f28e128]:
+            - generic [ref=f28e130] [cursor=pointer]: 
+            - generic [ref=f28e132]:
+              - text: 
+              - generic [ref=f28e133] [cursor=pointer]:
+                - generic [ref=f28e134]: 根目录
+                - generic [ref=f28e135]: 
+              - generic [ref=f28e136] [cursor=pointer]:
+                - generic [ref=f28e137]: www
+                - generic [ref=f28e138]: 
+              - generic [ref=f28e139] [cursor=pointer]:
+                - generic [ref=f28e140]: wwwroot
+                - generic [ref=f28e141]: 
+              - generic [ref=f28e142] [cursor=pointer]:
+                - generic [ref=f28e143]: spring
+                - generic [ref=f28e144]: 
+            - generic [ref=f28e146] [cursor=pointer]: 
+            - generic [ref=f28e147]:
+              - generic [ref=f28e148]: 
+              - generic [ref=f28e149] [cursor=pointer]: 需求反馈
+          - generic [ref=f28e150]:
+            - generic [ref=f28e151]:
+              - textbox "搜索文件/目录" [ref=f28e153]
+              - button "" [ref=f28e155] [cursor=pointer]:
+                - generic [ref=f28e157]: 
+            - generic [ref=f28e159] [cursor=pointer]:
+              - generic [ref=f28e160]:
+                - checkbox "包含子目录"
+              - generic [ref=f28e162]: 包含子目录
+        - generic [ref=f28e163]:
+          - generic [ref=f28e164]:
+            - button "上传/下载 " [ref=f28e166] [cursor=pointer]:
+              - generic [ref=f28e167]:
+                - text: 上传/下载
+                - generic [ref=f28e169]: 
+            - button "新建 " [ref=f28e171] [cursor=pointer]:
+              - generic [ref=f28e172]:
+                - img [ref=f28e343]
+                - text: 新建
+                - generic [ref=f28e173]: 
+            - button "文件内容搜索" [ref=f28e174] [cursor=pointer]:
+              - generic [ref=f28e176]: 文件内容搜索
+            - button "收藏夹 " [ref=f28e178] [cursor=pointer]:
+              - generic [ref=f28e179]:
+                - text: 收藏夹
+                - generic [ref=f28e181]: 
+            - button "终端" [ref=f28e182] [cursor=pointer]:
+              - generic [ref=f28e184]: 终端
+            - button " /(根目录)26.7 GB" [ref=f28e187] [cursor=pointer]:
+              - generic [ref=f28e189]:
+                - generic [ref=f28e190]: 
+                - text: /(根目录)26.7 GB
+            - button "更多功能 " [ref=f28e192] [cursor=pointer]:
+              - generic [ref=f28e193]:
+                - text: 更多功能
+                - generic [ref=f28e194]: 
+          - generic [ref=f28e195]:
+            - generic [ref=f28e196]:
+              - generic [ref=f28e197]: 
+              - text: 文件操作可使用右键
+            - text: 
+            - button " 回收站" [ref=f28e198] [cursor=pointer]:
+              - generic [ref=f28e199]:
+                - generic [ref=f28e200]: 
+                - text: 回收站
+            - generic [ref=f28e201]:
+              - img [ref=f28e203] [cursor=pointer]
+              - img [ref=f28e211] [cursor=pointer]
+        - generic [ref=f28e216]:
+          - generic [ref=f28e218]:
+            - generic [ref=f28e219]:
+              - generic [ref=f28e223] [cursor=pointer]:
+                - checkbox
+              - generic [ref=f28e225] [cursor=pointer]:
+                - generic [ref=f28e226]: 文件名称
+                - generic [ref=f28e227]:
+                  - generic [ref=f28e228]: 
+                  - generic [ref=f28e229]: 
+              - generic [ref=f28e231]: 企业级防篡改
+              - generic [ref=f28e233]: 权限/所有者
+              - generic [ref=f28e234] [cursor=pointer]:
+                - generic [ref=f28e235]: 大小
+                - generic [ref=f28e236]:
+                  - generic [ref=f28e237]: 
+                  - generic [ref=f28e238]: 
+              - generic [ref=f28e239] [cursor=pointer]:
+                - generic [ref=f28e240]: 修改时间
+                - generic [ref=f28e241]:
+                  - generic [ref=f28e242]: 
+                  - generic [ref=f28e243]: 
+              - generic [ref=f28e245]: 备注
+              - generic [ref=f28e247]: 操作
+            - generic [ref=f28e345]:
+              - generic [ref=f28e347]:
+                - generic "ERZHI-Extract-Original-Back-End-0.0.1-SNAPSHOT.jar" [ref=f28e354] [cursor=pointer]
+                - generic [ref=f28e356] [cursor=pointer]:
+                  - text: 未保护
+                  - img [ref=f28e357]
+                - generic "755/www" [ref=f28e359]
+                - generic [ref=f28e360]: 210.15 MB
+                - generic [ref=f28e362]: 2026-07-01 11:40:42
+                - generic [ref=f28e364]: 
+              - generic [ref=f28e366]:
+                - generic "erzhi-server-0.0.1-SNAPSHOT.jar" [ref=f28e373] [cursor=pointer]
+                - generic [ref=f28e375] [cursor=pointer]:
+                  - text: 未保护
+                  - img [ref=f28e376]
+                - generic "755/www" [ref=f28e378]
+                - generic [ref=f28e379]: 66.35 MB
+                - generic [ref=f28e381]: 2026-04-10 17:48:37
+                - generic [ref=f28e383]: 
+          - generic [ref=f28e284]:
+            - generic [ref=f28e285]:
+              - generic [ref=f28e286]: 共0个目录，2个文件，文件大小
+              - generic [ref=f28e288] [cursor=pointer]: 计算
+            - generic [ref=f28e290]:
+              - button "上一页" [disabled] [ref=f28e291]:
+                - generic:
+                  - img
+              - list [ref=f28e292]:
+                - listitem "第 1 页" [ref=f28e293]: "1"
+              - button "下一页" [disabled] [ref=f28e294]:
+                - generic:
+                  - img
+              - generic [ref=f28e297] [cursor=pointer]:
+                - generic:
+                  - combobox [ref=f28e299]
+                  - generic [ref=f28e300]: 500条/页
+                - img [ref=f28e303]
+              - generic [ref=f28e305]: 共 2 条
+              - generic [ref=f28e306]:
+                - generic [ref=f28e307]: 前往
+                - spinbutton "页" [ref=f28e310]: "1"
+                - generic [ref=f28e311]: 页
+      - generic [ref=f28e312]:
+        - generic [ref=f28e313]: 宝塔Linux面板©2014-2026 广东堡塔安全技术有限公司 (bt.cn)
+        - separator [ref=f28e314]
+        - link "论坛求助" [ref=f28e315] [cursor=pointer]:
+          - /url: http://www.bt.cn/bbs
+          - generic [ref=f28e316]:
+            - img [ref=f28e317]
+            - generic [ref=f28e319]: 论坛求助
+        - separator [ref=f28e320]
+        - link "使用手册" [ref=f28e321] [cursor=pointer]:
+          - /url: https://docs.bt.cn
+          - generic [ref=f28e322]:
+            - img [ref=f28e323]
+            - generic [ref=f28e325]: 使用手册
+        - separator [ref=f28e326]
+        - generic [ref=f28e327]:
+          - img [ref=f28e328]
+          - generic [ref=f28e330] [cursor=pointer]: 微信公众号
+        - separator [ref=f28e331]
+        - link "正版查询" [ref=f28e332] [cursor=pointer]:
+          - /url: https://www.bt.cn/auth
+          - generic [ref=f28e333]:
+            - img [ref=f28e334]
+            - generic [ref=f28e336]: 正版查询
+        - separator [ref=f28e337]
+        - generic [ref=f28e338]:
+          - img [ref=f28e339]
+          - generic [ref=f28e341] [cursor=pointer]: 联系人工客服
+    - generic [ref=f28e384]:
+      - generic [ref=f28e386] [cursor=pointer]: 
+      - generic [ref=f28e388] [cursor=pointer]: 
+  - img
+  - generic:        
+  - dialog [ref=f28e392]:
+    - generic [ref=f28e393]:
+      - banner [ref=f28e394]:
+        - generic [ref=f28e395]: 上传文件到【/www/wwwroot/spring】 --支持断点续传
+      - generic [ref=f28e396]:
+        - img [ref=f28e398] [cursor=pointer]
+        - generic [ref=f28e404]:
+          - generic [ref=f28e443]:
+            - generic [ref=f28e444]: 总进度：0%
+            - separator [ref=f28e445]
+            - generic [ref=f28e446]: 正在上传：(0/1)
+            - separator [ref=f28e447]
+            - generic [ref=f28e448]: 上传速度：0/s
+            - separator [ref=f28e449]
+            - generic [ref=f28e450]: 预计耗时：0
+          - generic [ref=f28e422]:
+            - generic [ref=f28e423]:
+              - generic [ref=f28e424]: 文件名
+              - generic [ref=f28e425]: 文件大小
+              - generic [ref=f28e426]: 上传状态
+              - generic [ref=f28e427]: 操作
+            - generic [ref=f28e434]:
+              - generic "/ERZHI-Extract-Original-Back-End-0.0.1-SNAPSHOT.jar" [ref=f28e437]
+              - generic [ref=f28e438]: 210.15 MB
+              - generic [ref=f28e440]: 等待上传
+              - generic [ref=f28e442] [cursor=pointer]: 取消
+  - dialog [ref=f28e452]:
+    - generic [active] [ref=f28e453]:
+      - banner [ref=f28e454]:
+        - generic [ref=f28e455]: 文件冲突确认
+      - generic [ref=f28e456]:
+        - img [ref=f28e458] [cursor=pointer]
+        - generic [ref=f28e463]:
+          - generic [ref=f28e464]:
+            - generic [ref=f28e465]: 
+            - generic [ref=f28e467]: 检测到上传目录包含重复文件，是否覆盖？
+          - generic [ref=f28e470]:
+            - table [ref=f28e472]:
+              - rowgroup [ref=f28e476]:
+                - row "文件名 文件差异(本地->线上)" [ref=f28e477]:
+                  - columnheader "文件名" [ref=f28e478]:
+                    - generic [ref=f28e480]: 文件名
+                  - columnheader "文件差异(本地->线上)" [ref=f28e481]:
+                    - generic [ref=f28e483]: 文件差异(本地->线上)
+            - table [ref=f28e488]:
+              - rowgroup [ref=f28e492]:
+                - row "/ERZHI-Extract-Original-Back-End-0.0.1-SNAPSHOT.jar 210.15 MB -> 210.15 MB" [ref=f28e493]:
+                  - cell "/ERZHI-Extract-Original-Back-End-0.0.1-SNAPSHOT.jar" [ref=f28e494]:
+                    - generic [ref=f28e495]: /ERZHI-Extract-Original-Back-End-0.0.1-SNAPSHOT.jar
+                  - cell "210.15 MB -> 210.15 MB" [ref=f28e496]:
+                    - generic [ref=f28e497]: 210.15 MB -> 210.15 MB
+      - contentinfo [ref=f28e498]:
+        - generic [ref=f28e500]:
+          - button "跳过" [ref=f28e501] [cursor=pointer]:
+            - generic [ref=f28e502]: 跳过
+          - button "覆盖" [ref=f28e503] [cursor=pointer]:
+            - generic [ref=f28e504]: 覆盖

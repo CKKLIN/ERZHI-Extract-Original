@@ -1,0 +1,312 @@
+- generic [ref=f9e1]:
+  - generic [ref=f9e4]:
+    - complementary [ref=f9e5]:
+      - generic [ref=f9e6]:
+        - generic [ref=f9e8] [cursor=pointer]:
+          - img [ref=f9e9]
+          - generic "双击可复制IP" [ref=f9e11]: 阿里云*宝塔面板
+          - generic [ref=f9e12]: "0"
+        - list [ref=f9e18]:
+          - listitem [ref=f9e19]:
+            - link "首页" [ref=f9e20] [cursor=pointer]:
+              - /url: /home
+              - img [ref=f9e21]
+              - generic [ref=f9e23]: 首页
+          - listitem [ref=f9e24]:
+            - link "网站" [ref=f9e25] [cursor=pointer]:
+              - /url: /site
+              - img [ref=f9e26]
+              - generic [ref=f9e28]: 网站
+          - listitem [ref=f9e29]:
+            - link "数据库" [ref=f9e30] [cursor=pointer]:
+              - /url: /database
+              - img [ref=f9e31]
+              - generic [ref=f9e33]: 数据库
+          - listitem [ref=f9e34]:
+            - link "Docker" [ref=f9e35] [cursor=pointer]:
+              - /url: /docker
+              - img [ref=f9e36]
+              - generic [ref=f9e38]: Docker
+          - listitem [ref=f9e39]:
+            - link "监控" [ref=f9e40] [cursor=pointer]:
+              - /url: /control
+              - img [ref=f9e41]
+              - generic [ref=f9e43]: 监控
+          - listitem [ref=f9e44]:
+            - link "安全" [ref=f9e45] [cursor=pointer]:
+              - /url: /firewall
+              - img [ref=f9e46]
+              - generic [ref=f9e48]: 安全
+          - listitem [ref=f9e49]:
+            - link "WAF" [ref=f9e50] [cursor=pointer]:
+              - /url: /waf
+              - img [ref=f9e51]
+              - generic [ref=f9e53]: WAF
+          - listitem [ref=f9e54]:
+            - link "文件" [ref=f9e55] [cursor=pointer]:
+              - /url: /files
+              - img [ref=f9e56]
+              - generic [ref=f9e58]: 文件
+          - listitem [ref=f9e59]:
+            - link "日志" [ref=f9e60] [cursor=pointer]:
+              - /url: /logs
+              - img [ref=f9e61]
+              - generic [ref=f9e63]: 日志
+          - listitem [ref=f9e64]:
+            - link "域名" [ref=f9e65] [cursor=pointer]:
+              - /url: /domain
+              - img [ref=f9e66]
+              - generic [ref=f9e68]: 域名
+          - listitem [ref=f9e69]:
+            - link "SSL" [ref=f9e70] [cursor=pointer]:
+              - /url: /ssl
+              - img [ref=f9e71]
+              - generic [ref=f9e73]: SSL
+          - listitem [ref=f9e74]:
+            - link "终端" [ref=f9e75] [cursor=pointer]:
+              - /url: /xterm
+              - img [ref=f9e76]
+              - generic [ref=f9e78]: 终端
+          - listitem [ref=f9e79]:
+            - link "节点管理" [ref=f9e80] [cursor=pointer]:
+              - /url: /node
+              - img [ref=f9e81]
+              - generic [ref=f9e83]: 节点管理
+          - listitem [ref=f9e84]:
+            - link "计划任务" [ref=f9e85] [cursor=pointer]:
+              - /url: /crontab
+              - img [ref=f9e86]
+              - generic [ref=f9e88]: 计划任务
+          - listitem [ref=f9e89]:
+            - link "软件商店" [ref=f9e90] [cursor=pointer]:
+              - /url: /soft
+              - img [ref=f9e91]
+              - generic [ref=f9e93]: 软件商店
+          - listitem [ref=f9e94]:
+            - link "设置" [ref=f9e95] [cursor=pointer]:
+              - /url: /config
+              - img [ref=f9e96]
+              - generic [ref=f9e98]: 设置
+          - listitem [ref=f9e99]:
+            - link "退出" [ref=f9e100] [cursor=pointer]:
+              - /url: javascript:;
+              - img [ref=f9e101]
+              - generic [ref=f9e103]: 退出
+        - generic [ref=f9e105]:
+          - generic [ref=f9e108] [cursor=pointer]: 
+          - generic [ref=f9e111] [cursor=pointer]: 
+    - generic [ref=f9e112]:
+      - generic [ref=f9e114]:
+        - generic [ref=f9e115]:
+          - generic [ref=f9e116]:
+            - generic [ref=f9e117] [cursor=pointer]: MySQL
+            - generic [ref=f9e118] [cursor=pointer]: SQLServer
+            - generic [ref=f9e119] [cursor=pointer]: MongoDB
+            - generic [ref=f9e120] [cursor=pointer]: Redis
+            - generic [ref=f9e121] [cursor=pointer]: PgSQL
+            - generic [ref=f9e122] [cursor=pointer]: SQLite
+          - generic [ref=f9e124] [cursor=pointer]: 企业版
+        - generic [ref=f9e127]:
+          - alert [ref=f9e128]:
+            - img [ref=f9e130]
+            - generic [ref=f9e134]:
+              - generic [ref=f9e135]: 自动备份数据库
+              - generic [ref=f9e136]:
+                - switch
+              - generic [ref=f9e139]: 添加数据库后，可开启自动备份，保证数据安全。
+          - generic [ref=f9e140]:
+            - generic [ref=f9e141]:
+              - generic [ref=f9e143]:
+                - button "添加数据库" [ref=f9e144] [cursor=pointer]:
+                  - generic [ref=f9e145]: 添加数据库
+                - button "root密码" [ref=f9e146] [cursor=pointer]:
+                  - generic [ref=f9e147]: root密码
+                - button "远程数据库" [ref=f9e148] [cursor=pointer]:
+                  - generic [ref=f9e149]: 远程数据库
+                - button "phpMyAdmin" [ref=f9e150] [cursor=pointer]:
+                  - generic [ref=f9e151]: phpMyAdmin
+                - generic [ref=f9e153]:
+                  - button "高级设置" [ref=f9e154] [cursor=pointer]:
+                    - generic [ref=f9e155]: 高级设置
+                  - button "切换下拉选项" [ref=f9e156] [cursor=pointer]:
+                    - img [ref=f9e159]
+                - button "同步数据库 " [ref=f9e163] [cursor=pointer]:
+                  - generic [ref=f9e164]:
+                    - text: 同步数据库
+                    - generic [ref=f9e165]: 
+                - button " 回收站" [ref=f9e166] [cursor=pointer]:
+                  - generic [ref=f9e167]:
+                    - generic [ref=f9e168]: 
+                    - generic [ref=f9e169]: 回收站
+                - button "MySQL 8.0.24 " [ref=f9e171] [cursor=pointer]:
+                  - generic [ref=f9e173]:
+                    - img [ref=f9e176]
+                    - generic [ref=f9e177]: MySQL
+                    - generic [ref=f9e178]: 8.0.24
+                    - generic [ref=f9e179]: 
+                - generic [ref=f9e180] [cursor=pointer]: 需求反馈
+              - generic [ref=f9e181]:
+                - generic [ref=f9e183] [cursor=pointer]:
+                  - generic:
+                    - combobox [ref=f9e185]
+                    - generic [ref=f9e188]: 全部分类
+                  - img [ref=f9e191]
+                - generic [ref=f9e193]:
+                  - textbox "请输入数据库名称/备注" [ref=f9e195]
+                  - button "" [ref=f9e197] [cursor=pointer]:
+                    - generic [ref=f9e199]: 
+                - button "" [ref=f9e200] [cursor=pointer]:
+                  - generic [ref=f9e202]: 
+                - button "" [active] [ref=f9e205] [cursor=pointer]:
+                  - generic [ref=f9e207]: 
+            - generic [ref=f9e210]:
+              - table [ref=f9e212]:
+                - rowgroup [ref=f9e222]:
+                  - row "数据库名 用户名 密码 备份 数据库位置 备注 操作" [ref=f9e223]:
+                    - columnheader [ref=f9e224]:
+                      - generic [ref=f9e228] [cursor=pointer]:
+                        - checkbox
+                    - columnheader "数据库名" [ref=f9e230] [cursor=pointer]:
+                      - generic [ref=f9e232]: 数据库名
+                    - columnheader "用户名" [ref=f9e236] [cursor=pointer]:
+                      - generic [ref=f9e238]: 用户名
+                    - columnheader "密码" [ref=f9e242]:
+                      - generic [ref=f9e244]: 密码
+                    - columnheader "备份" [ref=f9e245]:
+                      - generic [ref=f9e247]: 备份
+                    - columnheader "数据库位置" [ref=f9e248]:
+                      - generic [ref=f9e250]: 数据库位置
+                    - columnheader "备注" [ref=f9e251]:
+                      - generic [ref=f9e253]: 备注
+                    - columnheader "操作" [ref=f9e254]:
+                      - generic [ref=f9e256]: 操作
+              - table [ref=f9e261]:
+                - rowgroup [ref=f9e271]:
+                  - row "erzhi-extract-original erzhi-extract-original **********   点击备份 | 导入 本地数据库 erzhi-extract-original 管理 权限 工具 改密 删除" [ref=f9e272]:
+                    - cell [ref=f9e273]:
+                      - generic [ref=f9e276] [cursor=pointer]:
+                        - checkbox
+                    - cell "erzhi-extract-original" [ref=f9e278]:
+                      - generic [ref=f9e279]: erzhi-extract-original
+                    - cell "erzhi-extract-original" [ref=f9e280]:
+                      - generic [ref=f9e281]: erzhi-extract-original
+                    - cell "**********  " [ref=f9e282]:
+                      - generic [ref=f9e285]:
+                        - generic [ref=f9e286]: "**********"
+                        - generic "显示密码" [ref=f9e287] [cursor=pointer]: 
+                        - generic "复制密码" [ref=f9e288] [cursor=pointer]: 
+                    - cell "点击备份 | 导入" [ref=f9e289]:
+                      - generic [ref=f9e291]:
+                        - generic [ref=f9e292] [cursor=pointer]: 点击备份
+                        - generic [ref=f9e293]: "|"
+                        - generic [ref=f9e294] [cursor=pointer]: 导入
+                    - cell "本地数据库" [ref=f9e295]:
+                      - generic [ref=f9e297]: 本地数据库
+                    - cell "erzhi-extract-original" [ref=f9e298]:
+                      - textbox "点击编辑备注" [ref=f9e300]: erzhi-extract-original
+                    - cell "管理 权限 工具 改密 删除" [ref=f9e301]:
+                      - generic [ref=f9e303]:
+                        - text: 管理
+                        - separator [ref=f9e304]
+                        - text: 权限
+                        - separator [ref=f9e305]
+                        - text: 工具
+                        - separator [ref=f9e306]
+                        - text: 改密
+                        - separator [ref=f9e307]
+                        - text: 删除
+                  - row "erzhi-community erzhi-community **********   点击备份 | 导入 本地数据库 erzhi-community 管理 权限 工具 改密 删除" [ref=f9e308]:
+                    - cell [ref=f9e309]:
+                      - generic [ref=f9e312] [cursor=pointer]:
+                        - checkbox
+                    - cell "erzhi-community" [ref=f9e314]:
+                      - generic [ref=f9e315]: erzhi-community
+                    - cell "erzhi-community" [ref=f9e316]:
+                      - generic [ref=f9e317]: erzhi-community
+                    - cell "**********  " [ref=f9e318]:
+                      - generic [ref=f9e321]:
+                        - generic [ref=f9e322]: "**********"
+                        - generic "显示密码" [ref=f9e323] [cursor=pointer]: 
+                        - generic "复制密码" [ref=f9e324] [cursor=pointer]: 
+                    - cell "点击备份 | 导入" [ref=f9e325]:
+                      - generic [ref=f9e327]:
+                        - generic [ref=f9e328] [cursor=pointer]: 点击备份
+                        - generic [ref=f9e329]: "|"
+                        - generic [ref=f9e330] [cursor=pointer]: 导入
+                    - cell "本地数据库" [ref=f9e331]:
+                      - generic [ref=f9e333]: 本地数据库
+                    - cell "erzhi-community" [ref=f9e334]:
+                      - textbox "点击编辑备注" [ref=f9e336]: erzhi-community
+                    - cell "管理 权限 工具 改密 删除" [ref=f9e337]:
+                      - generic [ref=f9e339]:
+                        - text: 管理
+                        - separator [ref=f9e340]
+                        - text: 权限
+                        - separator [ref=f9e341]
+                        - text: 工具
+                        - separator [ref=f9e342]
+                        - text: 改密
+                        - separator [ref=f9e343]
+                        - text: 删除
+            - generic [ref=f9e344]:
+              - generic [ref=f9e346]:
+                - generic [ref=f9e348] [cursor=pointer]:
+                  - checkbox
+                - generic [ref=f9e350]:
+                  - generic [ref=f9e354]:
+                    - generic [ref=f9e355]: 请选择批量操作
+                    - img [ref=f9e358]
+                  - button "批量操作" [disabled] [ref=f9e360]:
+                    - generic [ref=f9e361]: 批量操作
+              - generic [ref=f9e363]:
+                - button "上一页" [disabled] [ref=f9e364]:
+                  - generic:
+                    - img
+                - list [ref=f9e365]:
+                  - listitem "第 1 页" [ref=f9e366]: "1"
+                - button "下一页" [disabled] [ref=f9e367]:
+                  - generic:
+                    - img
+                - generic [ref=f9e370] [cursor=pointer]:
+                  - generic:
+                    - combobox [ref=f9e372]
+                    - generic [ref=f9e373]: 10条/页
+                  - img [ref=f9e376]
+                - generic [ref=f9e378]: 共 2 条
+                - generic [ref=f9e379]:
+                  - generic [ref=f9e380]: 前往
+                  - spinbutton "页" [ref=f9e383]: "1"
+                  - generic [ref=f9e384]: 页
+      - generic [ref=f9e385]:
+        - generic [ref=f9e386]: 宝塔Linux面板©2014-2026 广东堡塔安全技术有限公司 (bt.cn)
+        - separator [ref=f9e387]
+        - link "论坛求助" [ref=f9e388] [cursor=pointer]:
+          - /url: http://www.bt.cn/bbs
+          - generic [ref=f9e389]:
+            - img [ref=f9e390]
+            - generic [ref=f9e392]: 论坛求助
+        - separator [ref=f9e393]
+        - link "使用手册" [ref=f9e394] [cursor=pointer]:
+          - /url: https://docs.bt.cn
+          - generic [ref=f9e395]:
+            - img [ref=f9e396]
+            - generic [ref=f9e398]: 使用手册
+        - separator [ref=f9e399]
+        - generic [ref=f9e400]:
+          - img [ref=f9e401]
+          - generic [ref=f9e403] [cursor=pointer]: 微信公众号
+        - separator [ref=f9e404]
+        - link "正版查询" [ref=f9e405] [cursor=pointer]:
+          - /url: https://www.bt.cn/auth
+          - generic [ref=f9e406]:
+            - img [ref=f9e407]
+            - generic [ref=f9e409]: 正版查询
+        - separator [ref=f9e410]
+        - generic [ref=f9e411]:
+          - img [ref=f9e412]
+          - generic [ref=f9e414] [cursor=pointer]: 联系人工客服
+    - generic [ref=f9e415]:
+      - generic [ref=f9e417] [cursor=pointer]: 
+      - generic [ref=f9e419] [cursor=pointer]: 
+  - img
+  - generic:  

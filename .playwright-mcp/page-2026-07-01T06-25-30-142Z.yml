@@ -1,0 +1,396 @@
+- generic [ref=f62e1]:
+  - generic [ref=f62e4]:
+    - complementary [ref=f62e5]:
+      - generic [ref=f62e6]:
+        - generic [ref=f62e8] [cursor=pointer]:
+          - img [ref=f62e9]
+          - generic "双击可复制IP" [ref=f62e11]: 阿里云*宝塔面板
+          - generic [ref=f62e12]: "0"
+        - list [ref=f62e18]:
+          - listitem [ref=f62e19]:
+            - link "首页" [ref=f62e20] [cursor=pointer]:
+              - /url: /home
+              - img [ref=f62e21]
+              - generic [ref=f62e23]: 首页
+          - listitem [ref=f62e24]:
+            - link "网站" [ref=f62e25] [cursor=pointer]:
+              - /url: /site
+              - img [ref=f62e26]
+              - generic [ref=f62e28]: 网站
+          - listitem [ref=f62e29]:
+            - link "数据库" [ref=f62e30] [cursor=pointer]:
+              - /url: /database
+              - img [ref=f62e31]
+              - generic [ref=f62e33]: 数据库
+          - listitem [ref=f62e34]:
+            - link "Docker" [ref=f62e35] [cursor=pointer]:
+              - /url: /docker
+              - img [ref=f62e36]
+              - generic [ref=f62e38]: Docker
+          - listitem [ref=f62e39]:
+            - link "监控" [ref=f62e40] [cursor=pointer]:
+              - /url: /control
+              - img [ref=f62e41]
+              - generic [ref=f62e43]: 监控
+          - listitem [ref=f62e44]:
+            - link "安全" [ref=f62e45] [cursor=pointer]:
+              - /url: /firewall
+              - img [ref=f62e46]
+              - generic [ref=f62e48]: 安全
+          - listitem [ref=f62e49]:
+            - link "WAF" [ref=f62e50] [cursor=pointer]:
+              - /url: /waf
+              - img [ref=f62e51]
+              - generic [ref=f62e53]: WAF
+          - listitem [ref=f62e54]:
+            - link "文件" [ref=f62e55] [cursor=pointer]:
+              - /url: /files
+              - img [ref=f62e56]
+              - generic [ref=f62e58]: 文件
+          - listitem [ref=f62e59]:
+            - link "日志" [ref=f62e60] [cursor=pointer]:
+              - /url: /logs
+              - img [ref=f62e61]
+              - generic [ref=f62e63]: 日志
+          - listitem [ref=f62e64]:
+            - link "域名" [ref=f62e65] [cursor=pointer]:
+              - /url: /domain
+              - img [ref=f62e66]
+              - generic [ref=f62e68]: 域名
+          - listitem [ref=f62e69]:
+            - link "SSL" [ref=f62e70] [cursor=pointer]:
+              - /url: /ssl
+              - img [ref=f62e71]
+              - generic [ref=f62e73]: SSL
+          - listitem [ref=f62e74]:
+            - link "终端" [ref=f62e75] [cursor=pointer]:
+              - /url: /xterm
+              - img [ref=f62e76]
+              - generic [ref=f62e78]: 终端
+          - listitem [ref=f62e79]:
+            - link "节点管理" [ref=f62e80] [cursor=pointer]:
+              - /url: /node
+              - img [ref=f62e81]
+              - generic [ref=f62e83]: 节点管理
+          - listitem [ref=f62e84]:
+            - link "计划任务" [ref=f62e85] [cursor=pointer]:
+              - /url: /crontab
+              - img [ref=f62e86]
+              - generic [ref=f62e88]: 计划任务
+          - listitem [ref=f62e89]:
+            - link "软件商店" [ref=f62e90] [cursor=pointer]:
+              - /url: /soft
+              - img [ref=f62e91]
+              - generic [ref=f62e93]: 软件商店
+          - listitem [ref=f62e94]:
+            - link "设置" [ref=f62e95] [cursor=pointer]:
+              - /url: /config
+              - img [ref=f62e96]
+              - generic [ref=f62e98]: 设置
+          - listitem [ref=f62e99]:
+            - link "退出" [ref=f62e100] [cursor=pointer]:
+              - /url: javascript:;
+              - img [ref=f62e101]
+              - generic [ref=f62e103]: 退出
+        - generic [ref=f62e105]:
+          - generic [ref=f62e108] [cursor=pointer]: 
+          - generic [ref=f62e111] [cursor=pointer]: 
+    - generic [ref=f62e112]:
+      - generic [ref=f62e114]:
+        - generic [ref=f62e115]:
+          - generic [ref=f62e116]:
+            - generic [ref=f62e117] [cursor=pointer]: PHP项目
+            - generic [ref=f62e118] [cursor=pointer]: Java项目
+            - generic [ref=f62e119] [cursor=pointer]: Node项目
+            - generic [ref=f62e120] [cursor=pointer]: Go项目
+            - generic [ref=f62e121] [cursor=pointer]: Python项目
+            - generic [ref=f62e122] [cursor=pointer]: Net项目
+            - generic [ref=f62e123] [cursor=pointer]: 反向代理
+            - generic [ref=f62e124] [cursor=pointer]: HTML项目
+            - generic [ref=f62e125] [cursor=pointer]: 其他项目
+          - generic [ref=f62e127] [cursor=pointer]: 企业版
+        - generic [ref=f62e130]:
+          - generic [ref=f62e131]:
+            - generic [ref=f62e132]:
+              - generic [ref=f62e133]:
+                - button "添加项目" [ref=f62e134] [cursor=pointer]:
+                  - generic [ref=f62e136]: 添加项目
+                - button "漏洞扫描" [ref=f62e137] [cursor=pointer]:
+                  - generic [ref=f62e139]: 漏洞扫描
+                - generic [ref=f62e141]:
+                  - button "Java环境管理" [ref=f62e142] [cursor=pointer]:
+                    - generic [ref=f62e144]: Java环境管理
+                  - button "切换下拉选项" [ref=f62e145] [cursor=pointer]:
+                    - img [ref=f62e148]
+                - button "项目组" [ref=f62e150] [cursor=pointer]:
+                  - generic [ref=f62e152]: 项目组
+                - button "网站统计总览" [ref=f62e153] [cursor=pointer]:
+                  - generic [ref=f62e155]: 网站统计总览
+              - generic [ref=f62e156]:
+                - link "Java项目教程" [ref=f62e157] [cursor=pointer]:
+                  - /url: https://www.bt.cn/bbs/thread-132714-1-1.html
+                  - generic [ref=f62e158]: Java项目教程
+                - generic [ref=f62e159]: 
+              - generic [ref=f62e160]:
+                - generic [ref=f62e161]: 
+                - generic [ref=f62e162] [cursor=pointer]: 需求反馈
+            - generic [ref=f62e163]:
+              - generic [ref=f62e165] [cursor=pointer]:
+                - generic:
+                  - combobox [ref=f62e167]
+                  - generic [ref=f62e170]: 全部分类
+                - img [ref=f62e173]
+              - generic [ref=f62e175]:
+                - textbox "请输入项目名称或备注" [ref=f62e177]
+                - button "" [ref=f62e179] [cursor=pointer]:
+                  - generic [ref=f62e181]: 
+              - button "" [ref=f62e182] [cursor=pointer]:
+                - generic [ref=f62e183]:
+                  - generic [ref=f62e184]: 
+                  - text: 
+              - button "" [ref=f62e187] [cursor=pointer]:
+                - generic [ref=f62e189]: 
+          - generic [ref=f62e192]:
+            - table [ref=f62e194]:
+              - rowgroup [ref=f62e207]:
+                - row "项目名称 项目PID 状态 端口 根目录 日流量 ▾ 到期时间 备注 SSL证书 操作" [ref=f62e208]:
+                  - columnheader [ref=f62e209]:
+                    - generic [ref=f62e213] [cursor=pointer]:
+                      - checkbox
+                  - columnheader "项目名称" [ref=f62e215] [cursor=pointer]:
+                    - generic [ref=f62e217]: 项目名称
+                  - columnheader "项目PID" [ref=f62e221]:
+                    - generic [ref=f62e223]: 项目PID
+                  - columnheader "状态" [ref=f62e224]:
+                    - generic [ref=f62e226]: 状态
+                  - columnheader "端口" [ref=f62e227]:
+                    - generic [ref=f62e229]: 端口
+                  - columnheader "根目录" [ref=f62e230]:
+                    - generic [ref=f62e232]: 根目录
+                  - columnheader "日流量 ▾" [ref=f62e233]:
+                    - button "日流量 ▾" [ref=f62e237] [cursor=pointer]:
+                      - generic [ref=f62e238]: 日流量
+                      - generic [ref=f62e239]: ▾
+                  - columnheader "到期时间" [ref=f62e240] [cursor=pointer]:
+                    - generic [ref=f62e242]: 到期时间
+                  - columnheader "备注" [ref=f62e246]:
+                    - generic [ref=f62e248]: 备注
+                  - columnheader "SSL证书" [ref=f62e249] [cursor=pointer]:
+                    - generic [ref=f62e251]: SSL证书
+                  - columnheader "操作" [ref=f62e255]:
+                    - generic [ref=f62e257]: 操作
+            - table [ref=f62e262]:
+              - rowgroup [ref=f62e275]:
+                - row "Extract-Original 11555 运行中  3001 /www/wwwroot/spring/ERZHI-Extract-Original-Back-End-0.0.1-SNAPSHOT.jar -- 永久 Extract-Original 未部署 设置 删除" [ref=f62e276]:
+                  - cell [ref=f62e277]:
+                    - generic [ref=f62e280] [cursor=pointer]:
+                      - checkbox
+                  - cell "Extract-Original" [ref=f62e282]:
+                    - generic [ref=f62e286] [cursor=pointer]: Extract-Original
+                  - cell "11555" [ref=f62e287]:
+                    - generic [ref=f62e288]: "11555"
+                  - cell "运行中 " [ref=f62e289]:
+                    - generic [ref=f62e292] [cursor=pointer]:
+                      - generic [ref=f62e293]: 运行中
+                      - generic [ref=f62e294]: 
+                  - cell "3001" [ref=f62e295]:
+                    - generic [ref=f62e296]: "3001"
+                  - cell "/www/wwwroot/spring/ERZHI-Extract-Original-Back-End-0.0.1-SNAPSHOT.jar" [ref=f62e297]:
+                    - generic "点击打开目录" [ref=f62e299] [cursor=pointer]: /www/wwwroot/spring/ERZHI-Extract-Original-Back-End-0.0.1-SNAPSHOT.jar
+                  - cell "--" [ref=f62e300]:
+                    - generic [ref=f62e302] [cursor=pointer]: "--"
+                  - cell "永久" [ref=f62e303]:
+                    - generic [ref=f62e305] [cursor=pointer]: 永久
+                  - cell "Extract-Original" [ref=f62e306]:
+                    - textbox "点击编辑备注" [ref=f62e308]: Extract-Original
+                  - cell "未部署" [ref=f62e309]:
+                    - generic [ref=f62e311] [cursor=pointer]: 未部署
+                  - cell "设置 删除" [ref=f62e312]:
+                    - generic [ref=f62e314]:
+                      - text: 设置
+                      - separator [ref=f62e315]
+                      - text: 删除
+                - row "erzhi-server-0 13820 运行中  8026 /www/wwwroot/spring/erzhi-server-0.0.1-SNAPSHOT.jar -- 永久 erzhi-server-0 未部署 设置 删除" [ref=f62e316]:
+                  - cell [ref=f62e317]:
+                    - generic [ref=f62e320] [cursor=pointer]:
+                      - checkbox
+                  - cell "erzhi-server-0" [ref=f62e322]:
+                    - generic [ref=f62e326] [cursor=pointer]: erzhi-server-0
+                  - cell "13820" [ref=f62e327]:
+                    - generic [ref=f62e328]: "13820"
+                  - cell "运行中 " [ref=f62e329]:
+                    - generic [ref=f62e332] [cursor=pointer]:
+                      - generic [ref=f62e333]: 运行中
+                      - generic [ref=f62e334]: 
+                  - cell "8026" [ref=f62e335]:
+                    - generic [ref=f62e336]: "8026"
+                  - cell "/www/wwwroot/spring/erzhi-server-0.0.1-SNAPSHOT.jar" [ref=f62e337]:
+                    - generic "点击打开目录" [ref=f62e339] [cursor=pointer]: /www/wwwroot/spring/erzhi-server-0.0.1-SNAPSHOT.jar
+                  - cell "--" [ref=f62e340]:
+                    - generic [ref=f62e342] [cursor=pointer]: "--"
+                  - cell "永久" [ref=f62e343]:
+                    - generic [ref=f62e345] [cursor=pointer]: 永久
+                  - cell "erzhi-server-0" [ref=f62e346]:
+                    - textbox "点击编辑备注" [ref=f62e348]: erzhi-server-0
+                  - cell "未部署" [ref=f62e349]:
+                    - generic [ref=f62e351] [cursor=pointer]: 未部署
+                  - cell "设置 删除" [ref=f62e352]:
+                    - generic [ref=f62e354]:
+                      - text: 设置
+                      - separator [ref=f62e355]
+                      - text: 删除
+          - generic [ref=f62e356]:
+            - generic [ref=f62e358]:
+              - generic [ref=f62e360] [cursor=pointer]:
+                - checkbox
+              - generic [ref=f62e362]:
+                - generic [ref=f62e366]:
+                  - generic [ref=f62e367]: 请选择批量操作
+                  - img [ref=f62e370]
+                - button "批量操作" [disabled] [ref=f62e372]:
+                  - generic [ref=f62e373]: 批量操作
+            - generic [ref=f62e375]:
+              - button "上一页" [disabled] [ref=f62e376]:
+                - generic:
+                  - img
+              - list [ref=f62e377]:
+                - listitem "第 1 页" [ref=f62e378]: "1"
+              - button "下一页" [disabled] [ref=f62e379]:
+                - generic:
+                  - img
+              - generic [ref=f62e382] [cursor=pointer]:
+                - generic:
+                  - combobox [ref=f62e384]
+                  - generic [ref=f62e385]: 10条/页
+                - img [ref=f62e388]
+              - generic [ref=f62e390]: 共 2 条
+              - generic [ref=f62e391]:
+                - generic [ref=f62e392]: 前往
+                - spinbutton "页" [ref=f62e395]: "1"
+                - generic [ref=f62e396]: 页
+      - generic [ref=f62e397]:
+        - generic [ref=f62e398]: 宝塔Linux面板©2014-2026 广东堡塔安全技术有限公司 (bt.cn)
+        - separator [ref=f62e399]
+        - link "论坛求助" [ref=f62e400] [cursor=pointer]:
+          - /url: http://www.bt.cn/bbs
+          - generic [ref=f62e401]:
+            - img [ref=f62e402]
+            - generic [ref=f62e404]: 论坛求助
+        - separator [ref=f62e405]
+        - link "使用手册" [ref=f62e406] [cursor=pointer]:
+          - /url: https://docs.bt.cn
+          - generic [ref=f62e407]:
+            - img [ref=f62e408]
+            - generic [ref=f62e410]: 使用手册
+        - separator [ref=f62e411]
+        - generic [ref=f62e412]:
+          - img [ref=f62e413]
+          - generic [ref=f62e415] [cursor=pointer]: 微信公众号
+        - separator [ref=f62e416]
+        - link "正版查询" [ref=f62e417] [cursor=pointer]:
+          - /url: https://www.bt.cn/auth
+          - generic [ref=f62e418]:
+            - img [ref=f62e419]
+            - generic [ref=f62e421]: 正版查询
+        - separator [ref=f62e422]
+        - generic [ref=f62e423]:
+          - img [ref=f62e424]
+          - generic [ref=f62e426] [cursor=pointer]: 联系人工客服
+    - generic [ref=f62e427]:
+      - generic [ref=f62e429] [cursor=pointer]: 
+      - generic [ref=f62e431] [cursor=pointer]: 
+  - img
+  - generic: 
+  - dialog [ref=f62e433]:
+    - generic [ref=f62e434]:
+      - banner [ref=f62e435]:
+        - generic [ref=f62e436]: Java项目管理[Extract-Original] -- 添加时间[2026-07-01 12:06:58]
+      - generic [ref=f62e437]:
+        - generic [ref=f62e439] [cursor=pointer]: 
+        - generic [ref=f62e441]:
+          - tabpanel "项目配置" [ref=f62e443]:
+            - generic [ref=f62e444]:
+              - generic [ref=f62e445]:
+                - generic [ref=f62e447]:
+                  - generic [ref=f62e449]:
+                    - generic [ref=f62e450]: "* 项目路径"
+                    - generic [ref=f62e453]:
+                      - textbox "* 项目路径" [ref=f62e455]: /www/wwwroot/spring/ERZHI-Extract-Original-Back-End-0.0.1-SNAPSHOT.jar
+                      - button "" [ref=f62e457] [cursor=pointer]:
+                        - generic [ref=f62e459]: 
+                  - generic [ref=f62e460]:
+                    - generic [ref=f62e461]: "* 项目名称"
+                    - textbox "* 项目名称" [disabled] [ref=f62e467]:
+                      - /placeholder: 选择项目文件，自动获取名称
+                      - text: Extract-Original
+                  - generic [ref=f62e468]:
+                    - generic [ref=f62e469]: "* 项目JDK"
+                    - generic [ref=f62e471]:
+                      - generic [ref=f62e472]:
+                        - generic [ref=f62e474] [cursor=pointer]:
+                          - generic:
+                            - combobox "* 项目JDK" [ref=f62e476]
+                            - generic [ref=f62e477]: jdk-17.0.8[/www/server/java/jdk-17.0.8/bin/java]
+                          - img [ref=f62e480]
+                        - button "" [ref=f62e483] [cursor=pointer]:
+                          - generic [ref=f62e485]: 
+                      - generic [ref=f62e486] [cursor=pointer]: 添加JDK信息
+                  - generic [ref=f62e487]:
+                    - generic [ref=f62e488]: "* 项目启动命令"
+                    - textbox "* 项目启动命令" [ref=f62e492]:
+                      - /placeholder: 选择项目jar文件，自动获取项目执行命令
+                      - text: /www/server/java/jdk-17.0.8/bin/java -jar -Xmx1024M -Xms256M /www/wwwroot/spring/ERZHI-Extract-Original-Back-End-0.0.1-SNAPSHOT.jar --server.port=3001
+                  - generic [ref=f62e493]:
+                    - generic [ref=f62e494]: 启动用户
+                    - generic [ref=f62e498] [cursor=pointer]:
+                      - generic:
+                        - combobox "启动用户" [ref=f62e500]
+                        - generic [ref=f62e501]: www
+                      - img [ref=f62e504]
+                  - generic [ref=f62e506]:
+                    - generic [ref=f62e507]: 项目端口
+                    - spinbutton "项目端口" [ref=f62e513]: "3001"
+                  - generic [ref=f62e514]:
+                    - generic [ref=f62e515]: 环境变量
+                    - radiogroup "环境变量" [ref=f62e517]:
+                      - generic [ref=f62e518] [cursor=pointer]:
+                        - radio "无" [ref=f62e520]
+                        - generic [ref=f62e522]: 无
+                      - generic [ref=f62e523] [cursor=pointer]:
+                        - radio "指定变量" [checked] [ref=f62e525]
+                        - generic [ref=f62e527]: 指定变量
+                      - generic [ref=f62e528] [cursor=pointer]:
+                        - radio "从文件加载" [ref=f62e530]
+                        - generic [ref=f62e532]: 从文件加载
+                  - group [ref=f62e568]:
+                    - generic [ref=f62e570]:
+                      - textbox "环境变量，1行1个，例如： JAVA_HOME=/usr/local/btjdk/jdk8" [ref=f62e573]: PLAYWRIGHT_NODEJS_PATH=/opt/node-v16.20.2-linux-x64/bin/node
+                      - text: 
+                  - generic [ref=f62e533]:
+                    - generic [ref=f62e534]: 项目备注
+                    - textbox "项目备注" [ref=f62e539]:
+                      - /placeholder: 输入项目备注，非必填
+                      - text: Extract-Original
+                  - group "守护进程" [ref=f62e540]:
+                    - generic [ref=f62e541]: 守护进程
+                    - generic [ref=f62e543] [cursor=pointer]:
+                      - generic [ref=f62e544]:
+                        - checkbox "项目意外停止时自动重启" [checked]
+                      - generic [ref=f62e546]: 项目意外停止时自动重启
+                  - group [ref=f62e547]:
+                    - button "保存当前配置" [active] [ref=f62e550] [cursor=pointer]:
+                      - generic [ref=f62e551]: 保存当前配置
+                - text: "* * *"
+              - list [ref=f62e552]:
+                - listitem [ref=f62e553]: 过往内置Tomcat项目、独立Tomcat项目的添加已经整合到Tomcat项目中
+          - tablist [ref=f62e557]:
+            - tab "项目配置" [selected] [ref=f62e558]
+            - tab "服务" [ref=f62e559]
+            - tab "外网访问" [ref=f62e560]
+            - tab "域名管理" [ref=f62e561]
+            - tab "SSL" [ref=f62e562]
+            - tab "配置文件" [ref=f62e563]
+            - tab "重定向" [ref=f62e564]
+            - tab "伪静态配置" [ref=f62e565]
+            - tab "负载状态" [ref=f62e566]
+            - tab "日志管理" [ref=f62e567]

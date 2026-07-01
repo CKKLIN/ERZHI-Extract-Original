@@ -13,7 +13,7 @@ const dev = {
 // 正式环境配置
 const prod = {
 	// 服务器地址（正式域名，部署后修改）
-	apiBase: 'https://your-domain.com',
+	apiBase: 'http://localhost:3001',
 }
 
 // 根据编译环境自动选择

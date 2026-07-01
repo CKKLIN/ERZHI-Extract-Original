@@ -1,0 +1,190 @@
+- generic [ref=f6e1]:
+  - generic [ref=f6e4]:
+    - complementary [ref=f6e5]:
+      - generic [ref=f6e6]:
+        - generic [ref=f6e8] [cursor=pointer]:
+          - img [ref=f6e9]
+          - generic "双击可复制IP" [ref=f6e11]: 阿里云*宝塔面板
+          - generic [ref=f6e12]: "0"
+        - list [ref=f6e18]:
+          - listitem [ref=f6e19]:
+            - link "首页" [ref=f6e20] [cursor=pointer]:
+              - /url: /home
+              - img [ref=f6e21]
+              - generic [ref=f6e23]: 首页
+          - listitem [ref=f6e24]:
+            - link "网站" [ref=f6e25] [cursor=pointer]:
+              - /url: /site
+              - img [ref=f6e26]
+              - generic [ref=f6e28]: 网站
+          - listitem [ref=f6e29]:
+            - link "数据库" [ref=f6e30] [cursor=pointer]:
+              - /url: /database
+              - img [ref=f6e31]
+              - generic [ref=f6e33]: 数据库
+          - listitem [ref=f6e34]:
+            - link "Docker" [ref=f6e35] [cursor=pointer]:
+              - /url: /docker
+              - img [ref=f6e36]
+              - generic [ref=f6e38]: Docker
+          - listitem [ref=f6e39]:
+            - link "监控" [ref=f6e40] [cursor=pointer]:
+              - /url: /control
+              - img [ref=f6e41]
+              - generic [ref=f6e43]: 监控
+          - listitem [ref=f6e44]:
+            - link "安全" [ref=f6e45] [cursor=pointer]:
+              - /url: /firewall
+              - img [ref=f6e46]
+              - generic [ref=f6e48]: 安全
+          - listitem [ref=f6e49]:
+            - link "WAF" [ref=f6e50] [cursor=pointer]:
+              - /url: /waf
+              - img [ref=f6e51]
+              - generic [ref=f6e53]: WAF
+          - listitem [ref=f6e54]:
+            - link "文件" [ref=f6e55] [cursor=pointer]:
+              - /url: /files
+              - img [ref=f6e56]
+              - generic [ref=f6e58]: 文件
+          - listitem [ref=f6e59]:
+            - link "日志" [ref=f6e60] [cursor=pointer]:
+              - /url: /logs
+              - img [ref=f6e61]
+              - generic [ref=f6e63]: 日志
+          - listitem [ref=f6e64]:
+            - link "域名" [ref=f6e65] [cursor=pointer]:
+              - /url: /domain
+              - img [ref=f6e66]
+              - generic [ref=f6e68]: 域名
+          - listitem [ref=f6e69]:
+            - link "SSL" [ref=f6e70] [cursor=pointer]:
+              - /url: /ssl
+              - img [ref=f6e71]
+              - generic [ref=f6e73]: SSL
+          - listitem [ref=f6e74]:
+            - link "终端" [ref=f6e75] [cursor=pointer]:
+              - /url: /xterm
+              - img [ref=f6e76]
+              - generic [ref=f6e78]: 终端
+          - listitem [ref=f6e79]:
+            - link "节点管理" [ref=f6e80] [cursor=pointer]:
+              - /url: /node
+              - img [ref=f6e81]
+              - generic [ref=f6e83]: 节点管理
+          - listitem [ref=f6e84]:
+            - link "计划任务" [ref=f6e85] [cursor=pointer]:
+              - /url: /crontab
+              - img [ref=f6e86]
+              - generic [ref=f6e88]: 计划任务
+          - listitem [ref=f6e89]:
+            - link "软件商店" [ref=f6e90] [cursor=pointer]:
+              - /url: /soft
+              - img [ref=f6e91]
+              - generic [ref=f6e93]: 软件商店
+          - listitem [ref=f6e94]:
+            - link "设置" [ref=f6e95] [cursor=pointer]:
+              - /url: /config
+              - img [ref=f6e96]
+              - generic [ref=f6e98]: 设置
+          - listitem [ref=f6e99]:
+            - link "退出" [ref=f6e100] [cursor=pointer]:
+              - /url: javascript:;
+              - img [ref=f6e101]
+              - generic [ref=f6e103]: 退出
+        - generic [ref=f6e105]:
+          - generic [ref=f6e108] [cursor=pointer]: 
+          - generic [ref=f6e111] [cursor=pointer]: 
+    - generic [ref=f6e112]:
+      - generic [ref=f6e116]:
+        - generic [ref=f6e117]:
+          - generic [ref=f6e118]:
+            - generic [ref=f6e121] [cursor=pointer]:
+              - generic "127.0.0.1" [ref=f6e124]: 本地服务器
+              - generic "关闭当前终端视图" [ref=f6e125]:
+                - generic [ref=f6e126]: 
+            - generic "点击添加服务器信息" [ref=f6e127] [cursor=pointer]:
+              - generic [ref=f6e128]: 
+            - generic "点击打开终端设置" [ref=f6e129] [cursor=pointer]:
+              - generic [ref=f6e264]: 
+            - generic "点击全屏显示" [ref=f6e131] [cursor=pointer]:
+              - generic [ref=f6e132]: 
+          - textbox "Terminal input" [active] [ref=f6e139]
+          - generic "点击隐藏右侧视图" [ref=f6e144] [cursor=pointer]
+        - generic [ref=f6e147]:
+          - tabpanel "服务器列表" [ref=f6e149]:
+            - generic [ref=f6e150]:
+              - button "添加服务器" [ref=f6e152] [cursor=pointer]:
+                - generic [ref=f6e153]: 添加服务器
+              - generic [ref=f6e155]:
+                - table [ref=f6e157]:
+                  - rowgroup [ref=f6e162]:
+                    - row "服务器IP 操作" [ref=f6e163]:
+                      - columnheader [ref=f6e164]:
+                        - generic [ref=f6e168] [cursor=pointer]:
+                          - checkbox
+                      - columnheader "服务器IP" [ref=f6e170]:
+                        - generic [ref=f6e172]: 服务器IP
+                      - columnheader "操作" [ref=f6e173]:
+                        - generic [ref=f6e175]: 操作
+                - table [ref=f6e180]:
+                  - rowgroup [ref=f6e185]:
+                    - row " 8.163.43.7 编辑 删除" [ref=f6e186]:
+                      - cell [ref=f6e187]:
+                        - generic [ref=f6e190] [cursor=pointer]:
+                          - checkbox
+                      - cell " 8.163.43.7" [ref=f6e192]:
+                        - generic [ref=f6e194] [cursor=pointer]:
+                          - generic [ref=f6e195]: 
+                          - generic [ref=f6e196]: 8.163.43.7
+                      - cell "编辑 删除" [ref=f6e197]:
+                        - generic [ref=f6e199]:
+                          - text: 编辑
+                          - separator [ref=f6e200]
+                          - text: 删除
+              - generic [ref=f6e201]:
+                - generic [ref=f6e203] [cursor=pointer]:
+                  - checkbox
+                - generic [ref=f6e205]:
+                  - generic [ref=f6e209]:
+                    - generic [ref=f6e210]: 请选择批量操作
+                    - img [ref=f6e213]
+                  - button "批量操作" [disabled] [ref=f6e215]:
+                    - generic [ref=f6e216]: 批量操作
+          - tablist [ref=f6e220]:
+            - tab "服务器列表" [selected] [ref=f6e221]
+            - tab "录像审计" [ref=f6e222]
+            - tab "常用命令" [ref=f6e223]
+      - generic [ref=f6e224]:
+        - generic [ref=f6e225]: 宝塔Linux面板©2014-2026 广东堡塔安全技术有限公司 (bt.cn)
+        - separator [ref=f6e226]
+        - link "论坛求助" [ref=f6e227] [cursor=pointer]:
+          - /url: http://www.bt.cn/bbs
+          - generic [ref=f6e228]:
+            - img [ref=f6e229]
+            - generic [ref=f6e231]: 论坛求助
+        - separator [ref=f6e232]
+        - link "使用手册" [ref=f6e233] [cursor=pointer]:
+          - /url: https://docs.bt.cn
+          - generic [ref=f6e234]:
+            - img [ref=f6e235]
+            - generic [ref=f6e237]: 使用手册
+        - separator [ref=f6e238]
+        - generic [ref=f6e239]:
+          - img [ref=f6e240]
+          - generic [ref=f6e242] [cursor=pointer]: 微信公众号
+        - separator [ref=f6e243]
+        - link "正版查询" [ref=f6e244] [cursor=pointer]:
+          - /url: https://www.bt.cn/auth
+          - generic [ref=f6e245]:
+            - img [ref=f6e246]
+            - generic [ref=f6e248]: 正版查询
+        - separator [ref=f6e249]
+        - generic [ref=f6e250]:
+          - img [ref=f6e251]
+          - generic [ref=f6e253] [cursor=pointer]: 联系人工客服
+    - generic [ref=f6e254]:
+      - generic [ref=f6e256] [cursor=pointer]: 
+      - generic [ref=f6e258] [cursor=pointer]: 
+  - img
+  - generic: 

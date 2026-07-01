@@ -1,0 +1,586 @@
+- generic [active] [ref=f13e1]:
+  - generic [ref=f13e4]:
+    - complementary [ref=f13e5]:
+      - generic [ref=f13e6]:
+        - generic [ref=f13e8] [cursor=pointer]:
+          - img [ref=f13e9]
+          - generic "双击可复制IP" [ref=f13e11]: 阿里云*宝塔面板
+          - generic [ref=f13e12]: "0"
+        - list [ref=f13e18]:
+          - listitem [ref=f13e19]:
+            - link "首页" [ref=f13e20] [cursor=pointer]:
+              - /url: /home
+              - img [ref=f13e21]
+              - generic [ref=f13e23]: 首页
+          - listitem [ref=f13e24]:
+            - link "网站" [ref=f13e25] [cursor=pointer]:
+              - /url: /site
+              - img [ref=f13e26]
+              - generic [ref=f13e28]: 网站
+          - listitem [ref=f13e29]:
+            - link "数据库" [ref=f13e30] [cursor=pointer]:
+              - /url: /database
+              - img [ref=f13e31]
+              - generic [ref=f13e33]: 数据库
+          - listitem [ref=f13e34]:
+            - link "Docker" [ref=f13e35] [cursor=pointer]:
+              - /url: /docker
+              - img [ref=f13e36]
+              - generic [ref=f13e38]: Docker
+          - listitem [ref=f13e39]:
+            - link "监控" [ref=f13e40] [cursor=pointer]:
+              - /url: /control
+              - img [ref=f13e41]
+              - generic [ref=f13e43]: 监控
+          - listitem [ref=f13e44]:
+            - link "安全" [ref=f13e45] [cursor=pointer]:
+              - /url: /firewall
+              - img [ref=f13e46]
+              - generic [ref=f13e48]: 安全
+          - listitem [ref=f13e49]:
+            - link "WAF" [ref=f13e50] [cursor=pointer]:
+              - /url: /waf
+              - img [ref=f13e51]
+              - generic [ref=f13e53]: WAF
+          - listitem [ref=f13e54]:
+            - link "文件" [ref=f13e55] [cursor=pointer]:
+              - /url: /files
+              - img [ref=f13e56]
+              - generic [ref=f13e58]: 文件
+          - listitem [ref=f13e59]:
+            - link "日志" [ref=f13e60] [cursor=pointer]:
+              - /url: /logs
+              - img [ref=f13e61]
+              - generic [ref=f13e63]: 日志
+          - listitem [ref=f13e64]:
+            - link "域名" [ref=f13e65] [cursor=pointer]:
+              - /url: /domain
+              - img [ref=f13e66]
+              - generic [ref=f13e68]: 域名
+          - listitem [ref=f13e69]:
+            - link "SSL" [ref=f13e70] [cursor=pointer]:
+              - /url: /ssl
+              - img [ref=f13e71]
+              - generic [ref=f13e73]: SSL
+          - listitem [ref=f13e74]:
+            - link "终端" [ref=f13e75] [cursor=pointer]:
+              - /url: /xterm
+              - img [ref=f13e76]
+              - generic [ref=f13e78]: 终端
+          - listitem [ref=f13e79]:
+            - link "节点管理" [ref=f13e80] [cursor=pointer]:
+              - /url: /node
+              - img [ref=f13e81]
+              - generic [ref=f13e83]: 节点管理
+          - listitem [ref=f13e84]:
+            - link "计划任务" [ref=f13e85] [cursor=pointer]:
+              - /url: /crontab
+              - img [ref=f13e86]
+              - generic [ref=f13e88]: 计划任务
+          - listitem [ref=f13e89]:
+            - link "软件商店" [ref=f13e90] [cursor=pointer]:
+              - /url: /soft
+              - img [ref=f13e91]
+              - generic [ref=f13e93]: 软件商店
+          - listitem [ref=f13e94]:
+            - link "设置" [ref=f13e95] [cursor=pointer]:
+              - /url: /config
+              - img [ref=f13e96]
+              - generic [ref=f13e98]: 设置
+          - listitem [ref=f13e99]:
+            - link "退出" [ref=f13e100] [cursor=pointer]:
+              - /url: javascript:;
+              - img [ref=f13e101]
+              - generic [ref=f13e103]: 退出
+        - generic [ref=f13e105]:
+          - generic [ref=f13e108] [cursor=pointer]: 
+          - generic [ref=f13e111] [cursor=pointer]: 
+    - generic [ref=f13e112]:
+      - generic [ref=f13e114]:
+        - generic [ref=f13e115]:
+          - generic [ref=f13e116]:
+            - generic [ref=f13e117] [cursor=pointer]: 系统防火墙
+            - generic [ref=f13e118] [cursor=pointer]: SSH管理
+            - generic [ref=f13e119] [cursor=pointer]: 服务器安全
+            - generic [ref=f13e120] [cursor=pointer]: 网站安全
+            - generic [ref=f13e121] [cursor=pointer]: 安全检测
+            - generic [ref=f13e122] [cursor=pointer]: 违规词检测
+            - generic [ref=f13e123] [cursor=pointer]: PHP网站安全
+            - generic [ref=f13e124] [cursor=pointer]: 入侵防御
+            - generic [ref=f13e125] [cursor=pointer]: 系统加固
+            - generic [ref=f13e126] [cursor=pointer]: 扫描感知
+          - generic [ref=f13e128] [cursor=pointer]: 企业版
+        - generic [ref=f13e131]:
+          - generic [ref=f13e132]:
+            - generic [ref=f13e133]: 防火墙开关
+            - generic [ref=f13e135]:
+              - switch [checked]
+            - generic [ref=f13e139]: 禁ping
+            - generic [ref=f13e141]:
+              - switch
+            - button "清理缓存" [ref=f13e145] [cursor=pointer]:
+              - generic [ref=f13e146]: 清理缓存
+          - generic [ref=f13e148]:
+            - tabpanel "端口规则：14" [ref=f13e195]:
+              - generic [ref=f13e196]:
+                - generic [ref=f13e197]:
+                  - generic [ref=f13e198]:
+                    - button "添加端口规则" [ref=f13e199] [cursor=pointer]:
+                      - generic [ref=f13e200]: 添加端口规则
+                    - generic [ref=f13e201]:
+                      - button "导入规则" [ref=f13e202] [cursor=pointer]:
+                        - generic [ref=f13e203]: 导入规则
+                      - button "导出规则" [ref=f13e204] [cursor=pointer]:
+                        - generic [ref=f13e205]: 导出规则
+                    - button "端口防扫描" [ref=f13e206] [cursor=pointer]:
+                      - generic [ref=f13e207]: 端口防扫描
+                  - generic [ref=f13e209]:
+                    - textbox "请输入端口/来源" [ref=f13e211]
+                    - button "" [ref=f13e213] [cursor=pointer]:
+                      - generic [ref=f13e215]: 
+                - generic [ref=f13e218]:
+                  - table [ref=f13e220]:
+                    - rowgroup [ref=f13e232]:
+                      - row "协议 端口 ? 状态 ? 策略 状态  来源 备注 时间 ? 操作" [ref=f13e233]:
+                        - columnheader [ref=f13e234]:
+                          - generic [ref=f13e238] [cursor=pointer]:
+                            - checkbox
+                        - columnheader "协议" [ref=f13e240]:
+                          - generic [ref=f13e242]: 协议
+                        - columnheader "端口 ?" [ref=f13e243]:
+                          - generic [ref=f13e245]:
+                            - text: 端口
+                            - generic [ref=f13e246] [cursor=pointer]: "?"
+                        - columnheader "状态 ?" [ref=f13e247]:
+                          - generic [ref=f13e249]:
+                            - text: 状态
+                            - generic [ref=f13e250] [cursor=pointer]: "?"
+                        - columnheader "策略" [ref=f13e251]:
+                          - generic [ref=f13e253]: 策略
+                        - columnheader "状态 " [ref=f13e254]:
+                          - button "状态 " [ref=f13e258] [cursor=pointer]:
+                            - generic [ref=f13e259]: 状态
+                            - generic [ref=f13e260]: 
+                        - columnheader "来源" [ref=f13e261]:
+                          - generic [ref=f13e263]: 来源
+                        - columnheader "备注" [ref=f13e264]:
+                          - generic [ref=f13e266]: 备注
+                        - columnheader "时间 ?" [ref=f13e267]:
+                          - generic [ref=f13e269]:
+                            - text: 时间
+                            - generic [ref=f13e270] [cursor=pointer]: "?"
+                        - columnheader "操作" [ref=f13e271]:
+                          - generic [ref=f13e273]: 操作
+                  - table [ref=f13e278]:
+                    - rowgroup [ref=f13e290]:
+                      - row "tcp 3000 正常（详情） 放行 入站 所有IP 2026-05-08 14:38:05 修改 删除" [ref=f13e291]:
+                        - cell [ref=f13e292]:
+                          - generic [ref=f13e295] [cursor=pointer]:
+                            - checkbox
+                        - cell "tcp" [ref=f13e297]:
+                          - generic [ref=f13e298]: tcp
+                        - cell "3000" [ref=f13e299]:
+                          - generic [ref=f13e301]: "3000"
+                        - cell "正常（详情）" [ref=f13e302]:
+                          - generic [ref=f13e304]: 正常（详情）
+                        - cell "放行" [ref=f13e305]:
+                          - generic [ref=f13e307] [cursor=pointer]: 放行
+                        - cell "入站" [ref=f13e308]:
+                          - generic [ref=f13e309]: 入站
+                        - cell "所有IP" [ref=f13e310]:
+                          - generic [ref=f13e312]: 所有IP
+                        - cell [ref=f13e313]
+                        - cell "2026-05-08 14:38:05" [ref=f13e315]:
+                          - generic [ref=f13e316]: 2026-05-08 14:38:05
+                        - cell "修改 删除" [ref=f13e317]:
+                          - generic [ref=f13e319]:
+                            - text: 修改
+                            - separator [ref=f13e320]
+                            - text: 删除
+                      - row "tcp 3306 正常（详情） 放行 入站 所有IP MySQL服务默认端口 2026-04-10 10:22:33 修改 删除" [ref=f13e321]:
+                        - cell [ref=f13e322]:
+                          - generic [ref=f13e325] [cursor=pointer]:
+                            - checkbox
+                        - cell "tcp" [ref=f13e327]:
+                          - generic [ref=f13e328]: tcp
+                        - cell "3306" [ref=f13e329]:
+                          - generic [ref=f13e331]: "3306"
+                        - cell "正常（详情）" [ref=f13e332]:
+                          - generic [ref=f13e334]: 正常（详情）
+                        - cell "放行" [ref=f13e335]:
+                          - generic [ref=f13e337] [cursor=pointer]: 放行
+                        - cell "入站" [ref=f13e338]:
+                          - generic [ref=f13e339]: 入站
+                        - cell "所有IP" [ref=f13e340]:
+                          - generic [ref=f13e342]: 所有IP
+                        - cell "MySQL服务默认端口" [ref=f13e343]:
+                          - generic [ref=f13e345]: MySQL服务默认端口
+                        - cell "2026-04-10 10:22:33" [ref=f13e346]:
+                          - generic [ref=f13e347]: 2026-04-10 10:22:33
+                        - cell "修改 删除" [ref=f13e348]:
+                          - generic [ref=f13e350]:
+                            - text: 修改
+                            - separator [ref=f13e351]
+                            - text: 删除
+                      - row "tcp 3308 未使用 放行 入站 所有IP 2026-04-10 10:22:01 修改 删除" [ref=f13e352]:
+                        - cell [ref=f13e353]:
+                          - generic [ref=f13e356] [cursor=pointer]:
+                            - checkbox
+                        - cell "tcp" [ref=f13e358]:
+                          - generic [ref=f13e359]: tcp
+                        - cell "3308" [ref=f13e360]:
+                          - generic [ref=f13e362]: "3308"
+                        - cell "未使用" [ref=f13e363]:
+                          - generic [ref=f13e365]: 未使用
+                        - cell "放行" [ref=f13e366]:
+                          - generic [ref=f13e368] [cursor=pointer]: 放行
+                        - cell "入站" [ref=f13e369]:
+                          - generic [ref=f13e370]: 入站
+                        - cell "所有IP" [ref=f13e371]:
+                          - generic [ref=f13e373]: 所有IP
+                        - cell [ref=f13e374]
+                        - cell "2026-04-10 10:22:01" [ref=f13e376]:
+                          - generic [ref=f13e377]: 2026-04-10 10:22:01
+                        - cell "修改 删除" [ref=f13e378]:
+                          - generic [ref=f13e380]:
+                            - text: 修改
+                            - separator [ref=f13e381]
+                            - text: 删除
+                      - row "tcp 8026 正常（详情） 放行 入站 所有IP 2026-04-09 17:17:18 修改 删除" [ref=f13e382]:
+                        - cell [ref=f13e383]:
+                          - generic [ref=f13e386] [cursor=pointer]:
+                            - checkbox
+                        - cell "tcp" [ref=f13e388]:
+                          - generic [ref=f13e389]: tcp
+                        - cell "8026" [ref=f13e390]:
+                          - generic [ref=f13e392]: "8026"
+                        - cell "正常（详情）" [ref=f13e393]:
+                          - generic [ref=f13e395]: 正常（详情）
+                        - cell "放行" [ref=f13e396]:
+                          - generic [ref=f13e398] [cursor=pointer]: 放行
+                        - cell "入站" [ref=f13e399]:
+                          - generic [ref=f13e400]: 入站
+                        - cell "所有IP" [ref=f13e401]:
+                          - generic [ref=f13e403]: 所有IP
+                        - cell [ref=f13e404]
+                        - cell "2026-04-09 17:17:18" [ref=f13e406]:
+                          - generic [ref=f13e407]: 2026-04-09 17:17:18
+                        - cell "修改 删除" [ref=f13e408]:
+                          - generic [ref=f13e410]:
+                            - text: 修改
+                            - separator [ref=f13e411]
+                            - text: 删除
+                      - row "tcp 20 未使用 放行 入站 所有IP FTP主动模式数据端口 -- 修改 删除" [ref=f13e412]:
+                        - cell [ref=f13e413]:
+                          - generic [ref=f13e416] [cursor=pointer]:
+                            - checkbox
+                        - cell "tcp" [ref=f13e418]:
+                          - generic [ref=f13e419]: tcp
+                        - cell "20" [ref=f13e420]:
+                          - generic [ref=f13e422]: "20"
+                        - cell "未使用" [ref=f13e423]:
+                          - generic [ref=f13e425]: 未使用
+                        - cell "放行" [ref=f13e426]:
+                          - generic [ref=f13e428] [cursor=pointer]: 放行
+                        - cell "入站" [ref=f13e429]:
+                          - generic [ref=f13e430]: 入站
+                        - cell "所有IP" [ref=f13e431]:
+                          - generic [ref=f13e433]: 所有IP
+                        - cell "FTP主动模式数据端口" [ref=f13e434]:
+                          - generic [ref=f13e436]: FTP主动模式数据端口
+                        - cell "--" [ref=f13e437]:
+                          - generic [ref=f13e438]: "--"
+                        - cell "修改 删除" [ref=f13e439]:
+                          - generic [ref=f13e441]:
+                            - text: 修改
+                            - separator [ref=f13e442]
+                            - text: 删除
+                      - row "tcp 21 未使用 放行 入站 所有IP FTP协议默认端口 -- 修改 删除" [ref=f13e443]:
+                        - cell [ref=f13e444]:
+                          - generic [ref=f13e447] [cursor=pointer]:
+                            - checkbox
+                        - cell "tcp" [ref=f13e449]:
+                          - generic [ref=f13e450]: tcp
+                        - cell "21" [ref=f13e451]:
+                          - generic [ref=f13e453]: "21"
+                        - cell "未使用" [ref=f13e454]:
+                          - generic [ref=f13e456]: 未使用
+                        - cell "放行" [ref=f13e457]:
+                          - generic [ref=f13e459] [cursor=pointer]: 放行
+                        - cell "入站" [ref=f13e460]:
+                          - generic [ref=f13e461]: 入站
+                        - cell "所有IP" [ref=f13e462]:
+                          - generic [ref=f13e464]: 所有IP
+                        - cell "FTP协议默认端口" [ref=f13e465]:
+                          - generic [ref=f13e467]: FTP协议默认端口
+                        - cell "--" [ref=f13e468]:
+                          - generic [ref=f13e469]: "--"
+                        - cell "修改 删除" [ref=f13e470]:
+                          - generic [ref=f13e472]:
+                            - text: 修改
+                            - separator [ref=f13e473]
+                            - text: 删除
+                      - row "tcp 22 未使用 放行 入站 所有IP SSH远程服务 -- 修改 删除" [ref=f13e474]:
+                        - cell [ref=f13e475]:
+                          - generic [ref=f13e478] [cursor=pointer]:
+                            - checkbox
+                        - cell "tcp" [ref=f13e480]:
+                          - generic [ref=f13e481]: tcp
+                        - cell "22" [ref=f13e482]:
+                          - generic [ref=f13e484]: "22"
+                        - cell "未使用" [ref=f13e485]:
+                          - generic [ref=f13e487]: 未使用
+                        - cell "放行" [ref=f13e488]:
+                          - generic [ref=f13e490] [cursor=pointer]: 放行
+                        - cell "入站" [ref=f13e491]:
+                          - generic [ref=f13e492]: 入站
+                        - cell "所有IP" [ref=f13e493]:
+                          - generic [ref=f13e495]: 所有IP
+                        - cell "SSH远程服务" [ref=f13e496]:
+                          - generic [ref=f13e498]: SSH远程服务
+                        - cell "--" [ref=f13e499]:
+                          - generic [ref=f13e500]: "--"
+                        - cell "修改 删除" [ref=f13e501]:
+                          - generic [ref=f13e503]:
+                            - text: 修改
+                            - separator [ref=f13e504]
+                            - text: 删除
+                      - row "tcp 80 正常（详情） 放行 入站 所有IP -- 修改 删除" [ref=f13e505]:
+                        - cell [ref=f13e506]:
+                          - generic [ref=f13e509] [cursor=pointer]:
+                            - checkbox
+                        - cell "tcp" [ref=f13e511]:
+                          - generic [ref=f13e512]: tcp
+                        - cell "80" [ref=f13e513]:
+                          - generic [ref=f13e515]: "80"
+                        - cell "正常（详情）" [ref=f13e516]:
+                          - generic [ref=f13e518]: 正常（详情）
+                        - cell "放行" [ref=f13e519]:
+                          - generic [ref=f13e521] [cursor=pointer]: 放行
+                        - cell "入站" [ref=f13e522]:
+                          - generic [ref=f13e523]: 入站
+                        - cell "所有IP" [ref=f13e524]:
+                          - generic [ref=f13e526]: 所有IP
+                        - cell [ref=f13e527]
+                        - cell "--" [ref=f13e529]:
+                          - generic [ref=f13e530]: "--"
+                        - cell "修改 删除" [ref=f13e531]:
+                          - generic [ref=f13e533]:
+                            - text: 修改
+                            - separator [ref=f13e534]
+                            - text: 删除
+                      - row "tcp 443 未使用 放行 入站 所有IP -- 修改 删除" [ref=f13e535]:
+                        - cell [ref=f13e536]:
+                          - generic [ref=f13e539] [cursor=pointer]:
+                            - checkbox
+                        - cell "tcp" [ref=f13e541]:
+                          - generic [ref=f13e542]: tcp
+                        - cell "443" [ref=f13e543]:
+                          - generic [ref=f13e545]: "443"
+                        - cell "未使用" [ref=f13e546]:
+                          - generic [ref=f13e548]: 未使用
+                        - cell "放行" [ref=f13e549]:
+                          - generic [ref=f13e551] [cursor=pointer]: 放行
+                        - cell "入站" [ref=f13e552]:
+                          - generic [ref=f13e553]: 入站
+                        - cell "所有IP" [ref=f13e554]:
+                          - generic [ref=f13e556]: 所有IP
+                        - cell [ref=f13e557]
+                        - cell "--" [ref=f13e559]:
+                          - generic [ref=f13e560]: "--"
+                        - cell "修改 删除" [ref=f13e561]:
+                          - generic [ref=f13e563]:
+                            - text: 修改
+                            - separator [ref=f13e564]
+                            - text: 删除
+                      - row "tcp 8888 正常（详情） 放行 入站 所有IP 宝塔Linux面板默认端口 -- 修改 删除" [ref=f13e565]:
+                        - cell [ref=f13e566]:
+                          - generic [ref=f13e569] [cursor=pointer]:
+                            - checkbox
+                        - cell "tcp" [ref=f13e571]:
+                          - generic [ref=f13e572]: tcp
+                        - cell "8888" [ref=f13e573]:
+                          - generic [ref=f13e575]: "8888"
+                        - cell "正常（详情）" [ref=f13e576]:
+                          - generic [ref=f13e578]: 正常（详情）
+                        - cell "放行" [ref=f13e579]:
+                          - generic [ref=f13e581] [cursor=pointer]: 放行
+                        - cell "入站" [ref=f13e582]:
+                          - generic [ref=f13e583]: 入站
+                        - cell "所有IP" [ref=f13e584]:
+                          - generic [ref=f13e586]: 所有IP
+                        - cell "宝塔Linux面板默认端口" [ref=f13e587]:
+                          - generic [ref=f13e589]: 宝塔Linux面板默认端口
+                        - cell "--" [ref=f13e590]:
+                          - generic [ref=f13e591]: "--"
+                        - cell "修改 删除" [ref=f13e592]:
+                          - generic [ref=f13e594]:
+                            - text: 修改
+                            - separator [ref=f13e595]
+                            - text: 删除
+                      - row "tcp 32262 未使用 放行 入站 所有IP -- 修改 删除" [ref=f13e596]:
+                        - cell [ref=f13e597]:
+                          - generic [ref=f13e600] [cursor=pointer]:
+                            - checkbox
+                        - cell "tcp" [ref=f13e602]:
+                          - generic [ref=f13e603]: tcp
+                        - cell "32262" [ref=f13e604]:
+                          - generic [ref=f13e606]: "32262"
+                        - cell "未使用" [ref=f13e607]:
+                          - generic [ref=f13e609]: 未使用
+                        - cell "放行" [ref=f13e610]:
+                          - generic [ref=f13e612] [cursor=pointer]: 放行
+                        - cell "入站" [ref=f13e613]:
+                          - generic [ref=f13e614]: 入站
+                        - cell "所有IP" [ref=f13e615]:
+                          - generic [ref=f13e617]: 所有IP
+                        - cell [ref=f13e618]
+                        - cell "--" [ref=f13e620]:
+                          - generic [ref=f13e621]: "--"
+                        - cell "修改 删除" [ref=f13e622]:
+                          - generic [ref=f13e624]:
+                            - text: 修改
+                            - separator [ref=f13e625]
+                            - text: 删除
+                      - row "tcp 39000-40000 正常 放行 入站 所有IP FTP被动模式端口范围 -- 修改 删除" [ref=f13e626]:
+                        - cell [ref=f13e627]:
+                          - generic [ref=f13e630] [cursor=pointer]:
+                            - checkbox
+                        - cell "tcp" [ref=f13e632]:
+                          - generic [ref=f13e633]: tcp
+                        - cell "39000-40000" [ref=f13e634]:
+                          - generic [ref=f13e636]: 39000-40000
+                        - cell "正常" [ref=f13e637]:
+                          - generic [ref=f13e639]: 正常
+                        - cell "放行" [ref=f13e640]:
+                          - generic [ref=f13e642] [cursor=pointer]: 放行
+                        - cell "入站" [ref=f13e643]:
+                          - generic [ref=f13e644]: 入站
+                        - cell "所有IP" [ref=f13e645]:
+                          - generic [ref=f13e647]: 所有IP
+                        - cell "FTP被动模式端口范围" [ref=f13e648]:
+                          - generic [ref=f13e650]: FTP被动模式端口范围
+                        - cell "--" [ref=f13e651]:
+                          - generic [ref=f13e652]: "--"
+                        - cell "修改 删除" [ref=f13e653]:
+                          - generic [ref=f13e655]:
+                            - text: 修改
+                            - separator [ref=f13e656]
+                            - text: 删除
+                      - row "tcp 15237 未使用 放行 入站 所有IP -- 修改 删除" [ref=f13e657]:
+                        - cell [ref=f13e658]:
+                          - generic [ref=f13e661] [cursor=pointer]:
+                            - checkbox
+                        - cell "tcp" [ref=f13e663]:
+                          - generic [ref=f13e664]: tcp
+                        - cell "15237" [ref=f13e665]:
+                          - generic [ref=f13e667]: "15237"
+                        - cell "未使用" [ref=f13e668]:
+                          - generic [ref=f13e670]: 未使用
+                        - cell "放行" [ref=f13e671]:
+                          - generic [ref=f13e673] [cursor=pointer]: 放行
+                        - cell "入站" [ref=f13e674]:
+                          - generic [ref=f13e675]: 入站
+                        - cell "所有IP" [ref=f13e676]:
+                          - generic [ref=f13e678]: 所有IP
+                        - cell [ref=f13e679]
+                        - cell "--" [ref=f13e681]:
+                          - generic [ref=f13e682]: "--"
+                        - cell "修改 删除" [ref=f13e683]:
+                          - generic [ref=f13e685]:
+                            - text: 修改
+                            - separator [ref=f13e686]
+                            - text: 删除
+                      - row "tcp 888 正常（详情） 放行 入站 所有IP phpMyAdmin默认端口 -- 修改 删除" [ref=f13e687]:
+                        - cell [ref=f13e688]:
+                          - generic [ref=f13e691] [cursor=pointer]:
+                            - checkbox
+                        - cell "tcp" [ref=f13e693]:
+                          - generic [ref=f13e694]: tcp
+                        - cell "888" [ref=f13e695]:
+                          - generic [ref=f13e697]: "888"
+                        - cell "正常（详情）" [ref=f13e698]:
+                          - generic [ref=f13e700]: 正常（详情）
+                        - cell "放行" [ref=f13e701]:
+                          - generic [ref=f13e703] [cursor=pointer]: 放行
+                        - cell "入站" [ref=f13e704]:
+                          - generic [ref=f13e705]: 入站
+                        - cell "所有IP" [ref=f13e706]:
+                          - generic [ref=f13e708]: 所有IP
+                        - cell "phpMyAdmin默认端口" [ref=f13e709]:
+                          - generic [ref=f13e711]: phpMyAdmin默认端口
+                        - cell "--" [ref=f13e712]:
+                          - generic [ref=f13e713]: "--"
+                        - cell "修改 删除" [ref=f13e714]:
+                          - generic [ref=f13e716]:
+                            - text: 修改
+                            - separator [ref=f13e717]
+                            - text: 删除
+                - generic [ref=f13e718]:
+                  - generic [ref=f13e720]:
+                    - generic [ref=f13e722] [cursor=pointer]:
+                      - checkbox
+                    - generic [ref=f13e724]:
+                      - generic [ref=f13e728]:
+                        - generic [ref=f13e729]: 请选择批量操作
+                        - img [ref=f13e732]
+                      - button "批量操作" [disabled] [ref=f13e734]:
+                        - generic [ref=f13e735]: 批量操作
+                  - generic [ref=f13e737]:
+                    - button "上一页" [disabled] [ref=f13e738]:
+                      - generic:
+                        - img
+                    - list [ref=f13e739]:
+                      - listitem "第 1 页" [ref=f13e740]: "1"
+                    - button "下一页" [disabled] [ref=f13e741]:
+                      - generic:
+                        - img
+                    - generic [ref=f13e744] [cursor=pointer]:
+                      - generic:
+                        - combobox [ref=f13e746]
+                        - generic [ref=f13e747]: 20条/页
+                      - img [ref=f13e750]
+                    - generic [ref=f13e752]: 共 14 条
+                    - generic [ref=f13e753]:
+                      - generic [ref=f13e754]: 前往
+                      - spinbutton "页" [ref=f13e757]: "1"
+                      - generic [ref=f13e758]: 页
+            - tablist [ref=f13e152]:
+              - tab "端口规则：14" [selected] [ref=f13e153]
+              - tab "IP规则：0" [ref=f13e154]
+              - tab "端口转发：0" [ref=f13e155]
+              - tab "地区规则：0" [ref=f13e156]
+              - tab "恶意IP自动封禁：0" [ref=f13e157]
+      - generic [ref=f13e164]:
+        - generic [ref=f13e165]: 宝塔Linux面板©2014-2026 广东堡塔安全技术有限公司 (bt.cn)
+        - separator [ref=f13e166]
+        - link "论坛求助" [ref=f13e167] [cursor=pointer]:
+          - /url: http://www.bt.cn/bbs
+          - generic [ref=f13e168]:
+            - img [ref=f13e169]
+            - generic [ref=f13e171]: 论坛求助
+        - separator [ref=f13e172]
+        - link "使用手册" [ref=f13e173] [cursor=pointer]:
+          - /url: https://docs.bt.cn
+          - generic [ref=f13e174]:
+            - img [ref=f13e175]
+            - generic [ref=f13e177]: 使用手册
+        - separator [ref=f13e178]
+        - generic [ref=f13e179]:
+          - img [ref=f13e180]
+          - generic [ref=f13e182] [cursor=pointer]: 微信公众号
+        - separator [ref=f13e183]
+        - link "正版查询" [ref=f13e184] [cursor=pointer]:
+          - /url: https://www.bt.cn/auth
+          - generic [ref=f13e185]:
+            - img [ref=f13e186]
+            - generic [ref=f13e188]: 正版查询
+        - separator [ref=f13e189]
+        - generic [ref=f13e190]:
+          - img [ref=f13e191]
+          - generic [ref=f13e193] [cursor=pointer]: 联系人工客服
+    - generic [ref=f13e759]:
+      - generic [ref=f13e761] [cursor=pointer]: 
+      - generic [ref=f13e763] [cursor=pointer]: 
+  - img
+  - generic: 

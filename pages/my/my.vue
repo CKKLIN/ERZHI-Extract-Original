@@ -39,27 +39,6 @@
 		<!-- 管理员：视频号 Cookie 配置 -->
 		<view class="admin-section" v-if="isAdmin">
 			<text class="section-title">管理员设置</text>
-			<view class="cookie-card">
-				<text class="cookie-label">视频号 Cookie</text>
-				<textarea
-					class="cookie-input"
-					:value="wxCookie"
-					placeholder="粘贴视频号 cookie（从浏览器 DevTools 获取）"
-					placeholder-class="cookie-placeholder"
-					:maxlength="-1"
-					auto-height
-					@input="onCookieInput"
-				/>
-				<view class="cookie-btn-row">
-					<view class="btn-save-cookie" @tap="saveCookie">
-						<text>保存</text>
-					</view>
-					<view class="btn-clear-cookie" @tap="clearCookie" v-if="wxCookie">
-						<text>清空</text>
-					</view>
-				</view>
-				<text class="cookie-status" v-if="cookieStatus">{{ cookieStatus }}</text>
-			</view>
 			<view class="platform-card">
 				<text class="cookie-label">平台管理</text>
 				<view class="platform-item" v-for="item in adminPlatforms" :key="item.platformKey">
